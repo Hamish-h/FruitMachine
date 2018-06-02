@@ -1,13 +1,18 @@
 public class FruitMachine {
 
-    private Selection fruitMachineChoice;
+    Selection reelOneChoice;
+    Selection reelTwoChoice;
+    Selection reelThreeChoice;
 
-    public FruitMachine (Selection fruitMachineChoice){
-        this.fruitMachineChoice = fruitMachineChoice;
+    public FruitMachine (Selection reelOneChoice, Selection reelTwoChoice, Selection reelThreeChoice){
+        this.reelOneChoice = reelOneChoice;
+        this.reelTwoChoice = reelTwoChoice;
+        this.reelThreeChoice = reelThreeChoice;
+
     }
 
     public Selection getSelection(Selection choice) {
-        return this.fruitMachineChoice = choice;
+        return this.reelOneChoice = choice;
     }
 
 }

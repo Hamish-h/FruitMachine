@@ -1,7 +1,14 @@
 public enum Selection {
 
-    APPLE,
-    ORANGE,
-    PEAR
+    APPLE("Apple"),
+    ORANGE("Orange"),
+    PEAR("Pear");
+
+
+    private String value;
+
+    Selection(String value) {
+        this.value = value;
+    }
 
 }

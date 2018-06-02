@@ -9,7 +9,7 @@ public class FruitMachineTest {
 
     @Before
     public void before(){
-        fruitMachine = new FruitMachine(Selection.APPLE);
+        fruitMachine = new FruitMachine(Selection.APPLE, Selection.ORANGE, Selection.PEAR);
     }
 
     @Test

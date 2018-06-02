@@ -10,7 +10,6 @@ public class FruitMachine {
         this.reelOneChoice = reelOneChoice;
         this.reelTwoChoice = reelTwoChoice;
         this.reelThreeChoice = reelThreeChoice;
-
     }
 
     public Selection randomiseReelChoice() {
@@ -18,6 +17,21 @@ public class FruitMachine {
         Random choice = new Random();
         int select = choice.nextInt(array.length);
         return array[select];
+    }
+
+    public void setReelOneChoice(Selection choice){
+        choice = randomiseReelChoice();
+        this.reelOneChoice = choice;
+    }
+
+    public void setReelTwoChoice(Selection choice){
+        choice = randomiseReelChoice();
+        this.reelTwoChoice = choice;
+    }
+
+    public void setReelThreeChoice(Selection choice){
+        choice = randomiseReelChoice();
+        this.reelThreeChoice = choice;
     }
 
     public Selection getSelection(Selection choice) {

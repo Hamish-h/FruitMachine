@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="2494ea82-c48d-4ef7-84e4-10a78b9a6fd2" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/FruitMachine.java" afterPath="$PROJECT_DIR$/src/main/java/FruitMachine.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/FruitMachineTest.java" afterPath="$PROJECT_DIR$/src/test/java/FruitMachineTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -29,8 +28,8 @@
               <file leaf-file-name="Selection.java" pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/src/main/java/Selection.java">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="75">
-                      <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+                    <state relative-caret-position="105">
+                      <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
                       <folding />
                     </state>
                   </provider>
@@ -43,11 +42,11 @@
               <file leaf-file-name="FruitMachine.java" pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/src/main/java/FruitMachine.java">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="315">
-                      <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+                    <state relative-caret-position="645">
+                      <caret line="43" column="0" lean-forward="true" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
                       <folding>
-                        <element signature="e#696#697#0" expanded="true" />
-                        <element signature="e#746#747#0" expanded="true" />
+                        <element signature="e#1107#1108#0" expanded="true" />
+                        <element signature="e#1157#1158#0" expanded="true" />
                       </folding>
                     </state>
                   </provider>
@@ -701,11 +700,11 @@
     <history-entry file="FruitMachineTest - 2018.06.02 at 23h 36m 02s.xml">
       <configuration name="FruitMachineTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="FruitMachineTest - 2018.06.02 at 23h 43m 45s.xml">
+      <configuration name="FruitMachineTest" configurationId="JUnit" />
+    </history-entry>
     <history-entry file="FruitMachineTest_canGetSelectionApple - 2018.06.02 at 23h 35m 07s.xml">
       <configuration name="FruitMachineTest.canGetSelectionApple" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FruitMachineTest_canGetSelectionOrange - 2018.06.02 at 22h 17m 52s.xml">
-      <configuration name="FruitMachineTest.canGetSelectionOrange" configurationId="JUnit" />
     </history-entry>
     <history-entry file="FruitMachineTest_canGetSelectionOrange - 2018.06.02 at 23h 35m 22s.xml">
       <configuration name="FruitMachineTest.canGetSelectionOrange" configurationId="JUnit" />
@@ -772,18 +771,18 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/Selection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ChoiceType.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Selection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -808,11 +807,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/FruitMachine.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+        <state relative-caret-position="645">
+          <caret line="43" column="0" lean-forward="true" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
           <folding>
-            <element signature="e#696#697#0" expanded="true" />
-            <element signature="e#746#747#0" expanded="true" />
+            <element signature="e#1107#1108#0" expanded="true" />
+            <element signature="e#1157#1158#0" expanded="true" />
           </folding>
         </state>
       </provider>

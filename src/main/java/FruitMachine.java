@@ -2,17 +2,17 @@ import java.util.Random;
 
 public class FruitMachine {
 
-    Selection reelOneChoice;
-    Selection reelTwoChoice;
-    Selection reelThreeChoice;
+        Selection reelOneChoice;
+        Selection reelTwoChoice;
+        Selection reelThreeChoice;
 
-    String prefix;
-    String pipe;
-    String winnerMessage;
-    String loserMessage;
-    String postfix;
-    Integer cashWinnings;
-    Integer playerCredits;
+        String prefix;
+        String pipe;
+        String winnerMessage;
+        String loserMessage;
+        String postfix;
+        Integer cashWinnings;
+        Integer playerCredits;
 
         public FruitMachine(Selection reelOneChoice, Selection reelTwoChoice, Selection reelThreeChoice) {
             this.reelOneChoice = reelOneChoice;
@@ -24,51 +24,51 @@ public class FruitMachine {
             this.pipe = " | ";
             this.winnerMessage = "> Congratulations, you have won £";
             this.loserMessage = "> You lose, care to try again, winnings £";
-            this.postfix =", credits remaining £";
+            this.postfix = ", credits remaining £";
 
             this.playerCredits = 20;
             this.cashWinnings = 0;
         }
 
-        public Selection randomiseReelChoice() {
-            Selection[] array = {Selection.APPLE, Selection.ORANGE, Selection.PEAR};
-            Random choice = new Random();
-            int select = choice.nextInt(array.length);
-            return array[select];
-        }
+    public Selection randomiseReelChoice() {
+        Selection[] array = {Selection.APPLE, Selection.ORANGE, Selection.PEAR};
+        Random choice = new Random();
+        int select = choice.nextInt(array.length);
+        return array[select];
+    }
 
-        public Selection getSelection(Selection choice) {
-            return this.reelOneChoice = choice;
-        }
+    public Selection getSelection(Selection choice) {
+        return this.reelOneChoice = choice;
+    }
 
-        public void setReelOneChoice(Selection choice) {
-            choice = randomiseReelChoice();
-            this.reelOneChoice = choice;
-        }
+    public void setReelOneChoice(Selection choice) {
+        choice = randomiseReelChoice();
+        this.reelOneChoice = choice;
+    }
 
-        public void setReelTwoChoice(Selection choice) {
-            choice = randomiseReelChoice();
-            this.reelTwoChoice = choice;
-        }
+    public void setReelTwoChoice(Selection choice) {
+        choice = randomiseReelChoice();
+        this.reelTwoChoice = choice;
+    }
 
-        public void setReelThreeChoice(Selection choice) {
-            choice = randomiseReelChoice();
-            this.reelThreeChoice = choice;
-        }
+    public void setReelThreeChoice(Selection choice) {
+        choice = randomiseReelChoice();
+        this.reelThreeChoice = choice;
+    }
 
-        public Selection getReelOneChoice() {
-            return reelOneChoice;
-        }
+    public Selection getReelOneChoice() {
+        return reelOneChoice;
+    }
 
-        public Selection getReelTwoChoice() {
-            return reelTwoChoice;
-        }
+    public Selection getReelTwoChoice() {
+        return reelTwoChoice;
+    }
 
-        public Selection getReelThreeChoice() {
-            return reelThreeChoice;
-        }
+    public Selection getReelThreeChoice() {
+        return reelThreeChoice;
+    }
 
-        public String getReels() {
+    public String getReels() {
 
         Selection reelOne = getReelOneChoice();
         Selection reelTwo = getReelTwoChoice();
@@ -77,22 +77,20 @@ public class FruitMachine {
         if ((reelOne == Selection.APPLE) && (reelTwo == Selection.APPLE) && (reelThree == Selection.APPLE)) {
             cashWinnings = (cashWinnings + 25);
             System.out.println(prefix + pipe + reelOne + pipe + reelTwo + pipe + reelThree + pipe + winnerMessage + cashWinnings + postfix + playerCredits);
-        }
-
-        else if ((reelOne == Selection.PEAR) && (reelTwo == Selection.PEAR) && (reelThree == Selection.PEAR)) {
+        } else if ((reelOne == Selection.PEAR) && (reelTwo == Selection.PEAR) && (reelThree == Selection.PEAR)) {
             cashWinnings = (cashWinnings + 25);
             System.out.println(prefix + pipe + reelOne + pipe + reelTwo + pipe + reelThree + pipe + winnerMessage + cashWinnings + postfix + playerCredits);
-        }
-
-        else if ((reelOne == Selection.ORANGE) && (reelTwo == Selection.ORANGE) && (reelThree == Selection.ORANGE)) {
+        } else if ((reelOne == Selection.ORANGE) && (reelTwo == Selection.ORANGE) && (reelThree == Selection.ORANGE)) {
             cashWinnings = (cashWinnings + 25);
             System.out.println(prefix + pipe + reelOne + pipe + reelTwo + pipe + reelThree + pipe + winnerMessage + cashWinnings + postfix + playerCredits);
-        }
-
-        else {
+        } else {
             cashWinnings = (cashWinnings);
-            System.out.println(prefix + pipe + reelOne + pipe + reelTwo + pipe + reelThree + pipe + loserMessage + cashWinnings + postfix + playerCredits); return loserMessage;
+            System.out.println(prefix + pipe + reelOne + pipe + reelTwo + pipe + reelThree + pipe + loserMessage + cashWinnings + postfix + playerCredits);
+            return loserMessage;
         }
         return loserMessage;
     }
 }
+
+
+

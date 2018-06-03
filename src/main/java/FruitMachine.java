@@ -19,6 +19,7 @@ public class FruitMachine {
             this.reelTwoChoice = reelTwoChoice;
             this.reelThreeChoice = reelThreeChoice;
 
+            // System.out.println messages for 'getReels'
             this.prefix = "Spinning... <";
             this.pipe = " | ";
             this.winnerMessage = "> Congratulations, you have won £";

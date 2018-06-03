@@ -36,18 +36,11 @@ public class FruitMachineTest {
     // Fruit machine uses random selection so tests can both pass and fail
 
     @Test
-    public void CanSpinReels(){
+    public void CanGetGame(){
+        fruitMachine.setReelOneChoice(Selection.APPLE);
+        fruitMachine.setReelTwoChoice(Selection.ORANGE);
+        fruitMachine.setReelThreeChoice(Selection.PEAR);
         assertSame(fruitMachine.loserMessage, fruitMachine.getReels());
-    }
-
-    @Test
-    public void CanGetLoser(){
-//        fruitMachine.setReelOneChoice(Selection.APPLE);
-//        fruitMachine.setReelTwoChoice(Selection.ORANGE);
-//        fruitMachine.setReelThreeChoice(Selection.PEAR);
-        assertEquals(Selection.APPLE, fruitMachine.getSelection(Selection.APPLE));
-        assertEquals(Selection.ORANGE, fruitMachine.getSelection(Selection.ORANGE));
-        assertEquals(Selection.PEAR, fruitMachine.getSelection(Selection.PEAR));
     }
 
 //    @Test
@@ -59,8 +52,6 @@ public class FruitMachineTest {
 //        assertEquals(Selection.ORANGE, fruitMachine.getReelTwoChoice());
 //        assertEquals(Selection.PEAR, fruitMachine.getReelThreeChoice());
 //    }
-
-
-
+//
 }
 

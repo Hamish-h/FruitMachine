@@ -43,17 +43,17 @@
               <file leaf-file-name="FruitMachine.java" pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/src/main/java/FruitMachine.java">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="240">
-                      <caret line="17" column="25" lean-forward="false" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="25" />
+                    <state relative-caret-position="-100">
+                      <caret line="64" column="51" lean-forward="true" selection-start-line="64" selection-start-column="51" selection-end-line="64" selection-end-column="51" />
                       <folding>
-                        <element signature="e#940#941#0" expanded="true" />
-                        <element signature="e#990#991#0" expanded="true" />
-                        <element signature="e#1448#1449#0" expanded="true" />
-                        <element signature="e#1484#1485#0" expanded="true" />
-                        <element signature="e#1527#1528#0" expanded="true" />
-                        <element signature="e#1563#1564#0" expanded="true" />
-                        <element signature="e#1608#1609#0" expanded="true" />
-                        <element signature="e#1646#1647#0" expanded="true" />
+                        <element signature="e#941#942#0" expanded="true" />
+                        <element signature="e#991#992#0" expanded="true" />
+                        <element signature="e#1449#1450#0" expanded="true" />
+                        <element signature="e#1485#1486#0" expanded="true" />
+                        <element signature="e#1528#1529#0" expanded="true" />
+                        <element signature="e#1564#1565#0" expanded="true" />
+                        <element signature="e#1609#1610#0" expanded="true" />
+                        <element signature="e#1647#1648#0" expanded="true" />
                       </folding>
                     </state>
                   </provider>
@@ -68,8 +68,8 @@
           <file leaf-file-name="FruitMachineTest.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/test/java/FruitMachineTest.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="495">
-                  <caret line="33" column="8" lean-forward="false" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="8" />
+                <state relative-caret-position="585">
+                  <caret line="39" column="0" lean-forward="true" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
                   <folding>
                     <element signature="imports" expanded="true" />
                     <element signature="e#243#244#0" expanded="true" />
@@ -96,6 +96,11 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <replaceStrings>
+      <replace>pipe</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -704,34 +709,34 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="FruitMachineTest_CanGetSelectionAppleAppleApple - 2018.06.03 at 01h 55m 26s.xml">
-      <configuration name="FruitMachineTest.CanGetSelectionAppleAppleApple" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FruitMachineTest_CanGetSelectionAppleAppleApple - 2018.06.03 at 01h 55m 30s.xml">
-      <configuration name="FruitMachineTest.CanGetSelectionAppleAppleApple" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FruitMachineTest_CanGetSelectionAppleAppleApple - 2018.06.03 at 01h 55m 38s.xml">
-      <configuration name="FruitMachineTest.CanGetSelectionAppleAppleApple" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FruitMachineTest_CanGetSelectionAppleAppleApple - 2018.06.03 at 01h 55m 44s.xml">
-      <configuration name="FruitMachineTest.CanGetSelectionAppleAppleApple" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FruitMachineTest_CanGetSelectionAppleAppleApple - 2018.06.03 at 02h 06m 23s.xml">
-      <configuration name="FruitMachineTest.CanGetSelectionAppleAppleApple" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FruitMachineTest_CanGetSelectionAppleAppleApple - 2018.06.03 at 02h 06m 32s.xml">
-      <configuration name="FruitMachineTest.CanGetSelectionAppleAppleApple" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FruitMachineTest_CanGetSelectionAppleAppleApple - 2018.06.03 at 02h 06m 35s.xml">
-      <configuration name="FruitMachineTest.CanGetSelectionAppleAppleApple" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FruitMachineTest_CanGetSelectionAppleAppleApple - 2018.06.03 at 02h 06m 38s.xml">
-      <configuration name="FruitMachineTest.CanGetSelectionAppleAppleApple" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FruitMachineTest_CanGetSelectionAppleAppleApple - 2018.06.03 at 02h 06m 41s.xml">
-      <configuration name="FruitMachineTest.CanGetSelectionAppleAppleApple" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="FruitMachineTest_CanGetSelectionAppleAppleApple - 2018.06.03 at 02h 08m 01s.xml">
+      <configuration name="FruitMachineTest.CanGetSelectionAppleAppleApple" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FruitMachineTest_CanGetSelectionAppleAppleApple - 2018.06.03 at 02h 09m 45s.xml">
+      <configuration name="FruitMachineTest.CanGetSelectionAppleAppleApple" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FruitMachineTest_CanGetSelectionAppleAppleApple - 2018.06.03 at 02h 11m 01s.xml">
+      <configuration name="FruitMachineTest.CanGetSelectionAppleAppleApple" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FruitMachineTest_CanGetSelectionAppleAppleApple - 2018.06.03 at 02h 11m 06s.xml">
+      <configuration name="FruitMachineTest.CanGetSelectionAppleAppleApple" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FruitMachineTest_CanGetSelectionAppleAppleApple - 2018.06.03 at 02h 11m 10s.xml">
+      <configuration name="FruitMachineTest.CanGetSelectionAppleAppleApple" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FruitMachineTest_CanGetSelectionAppleAppleApple - 2018.06.03 at 02h 11m 14s.xml">
+      <configuration name="FruitMachineTest.CanGetSelectionAppleAppleApple" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FruitMachineTest_CanGetSelectionAppleAppleApple - 2018.06.03 at 02h 11m 17s.xml">
+      <configuration name="FruitMachineTest.CanGetSelectionAppleAppleApple" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FruitMachineTest_CanGetSelectionAppleAppleApple - 2018.06.03 at 02h 13m 33s.xml">
+      <configuration name="FruitMachineTest.CanGetSelectionAppleAppleApple" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FruitMachineTest_CanGetSelectionAppleAppleApple - 2018.06.03 at 02h 14m 10s.xml">
+      <configuration name="FruitMachineTest.CanGetSelectionAppleAppleApple" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FruitMachineTest_CanGetSelectionAppleAppleApple - 2018.06.03 at 02h 14m 20s.xml">
       <configuration name="FruitMachineTest.CanGetSelectionAppleAppleApple" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -796,8 +801,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/FruitMachineTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" column="8" lean-forward="false" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="8" />
+        <state relative-caret-position="585">
+          <caret line="39" column="0" lean-forward="true" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#243#244#0" expanded="true" />
@@ -814,17 +819,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/FruitMachine.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="17" column="25" lean-forward="false" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="25" />
+        <state relative-caret-position="-100">
+          <caret line="64" column="51" lean-forward="true" selection-start-line="64" selection-start-column="51" selection-end-line="64" selection-end-column="51" />
           <folding>
-            <element signature="e#940#941#0" expanded="true" />
-            <element signature="e#990#991#0" expanded="true" />
-            <element signature="e#1448#1449#0" expanded="true" />
-            <element signature="e#1484#1485#0" expanded="true" />
-            <element signature="e#1527#1528#0" expanded="true" />
-            <element signature="e#1563#1564#0" expanded="true" />
-            <element signature="e#1608#1609#0" expanded="true" />
-            <element signature="e#1646#1647#0" expanded="true" />
+            <element signature="e#941#942#0" expanded="true" />
+            <element signature="e#991#992#0" expanded="true" />
+            <element signature="e#1449#1450#0" expanded="true" />
+            <element signature="e#1485#1486#0" expanded="true" />
+            <element signature="e#1528#1529#0" expanded="true" />
+            <element signature="e#1564#1565#0" expanded="true" />
+            <element signature="e#1609#1610#0" expanded="true" />
+            <element signature="e#1647#1648#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -33,7 +33,7 @@ public class FruitMachineTest {
         fruitMachine.setReelOneChoice(Selection.APPLE);
         fruitMachine.setReelTwoChoice(Selection.APPLE);
         fruitMachine.setReelThreeChoice(Selection.APPLE);
-        assertEquals("Congratulations", fruitMachine.getReels());
+        assertEquals("", fruitMachine.getReels());
     }
 
 }

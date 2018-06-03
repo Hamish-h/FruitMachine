@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2494ea82-c48d-4ef7-84e4-10a78b9a6fd2" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/FruitMachine.java" afterPath="$PROJECT_DIR$/src/main/java/FruitMachine.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/FruitMachineTest.java" afterPath="$PROJECT_DIR$/src/test/java/FruitMachineTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -43,8 +43,8 @@
               <file leaf-file-name="FruitMachine.java" pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/src/main/java/FruitMachine.java">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="-100">
-                      <caret line="64" column="51" lean-forward="true" selection-start-line="64" selection-start-column="51" selection-end-line="64" selection-end-column="51" />
+                    <state relative-caret-position="444">
+                      <caret line="65" column="2" lean-forward="false" selection-start-line="65" selection-start-column="2" selection-end-line="65" selection-end-column="2" />
                       <folding>
                         <element signature="e#941#942#0" expanded="true" />
                         <element signature="e#991#992#0" expanded="true" />
@@ -709,12 +709,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="FruitMachineTest_CanGetSelectionAppleAppleApple - 2018.06.03 at 02h 08m 01s.xml">
-      <configuration name="FruitMachineTest.CanGetSelectionAppleAppleApple" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FruitMachineTest_CanGetSelectionAppleAppleApple - 2018.06.03 at 02h 09m 45s.xml">
-      <configuration name="FruitMachineTest.CanGetSelectionAppleAppleApple" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="FruitMachineTest_CanGetSelectionAppleAppleApple - 2018.06.03 at 02h 11m 01s.xml">
       <configuration name="FruitMachineTest.CanGetSelectionAppleAppleApple" configurationId="JUnit" />
     </history-entry>
@@ -737,6 +731,12 @@
       <configuration name="FruitMachineTest.CanGetSelectionAppleAppleApple" configurationId="JUnit" />
     </history-entry>
     <history-entry file="FruitMachineTest_CanGetSelectionAppleAppleApple - 2018.06.03 at 02h 14m 20s.xml">
+      <configuration name="FruitMachineTest.CanGetSelectionAppleAppleApple" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FruitMachineTest_CanGetSelectionAppleAppleApple - 2018.06.03 at 02h 20m 16s.xml">
+      <configuration name="FruitMachineTest.CanGetSelectionAppleAppleApple" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FruitMachineTest_CanGetSelectionAppleAppleApple - 2018.06.03 at 02h 20m 22s.xml">
       <configuration name="FruitMachineTest.CanGetSelectionAppleAppleApple" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -819,8 +819,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/FruitMachine.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-100">
-          <caret line="64" column="51" lean-forward="true" selection-start-line="64" selection-start-column="51" selection-end-line="64" selection-end-column="51" />
+        <state relative-caret-position="444">
+          <caret line="65" column="2" lean-forward="false" selection-start-line="65" selection-start-column="2" selection-end-line="65" selection-end-column="2" />
           <folding>
             <element signature="e#941#942#0" expanded="true" />
             <element signature="e#991#992#0" expanded="true" />

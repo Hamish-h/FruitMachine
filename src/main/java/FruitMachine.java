@@ -63,6 +63,7 @@ public class FruitMachine {
         Selection reelOne = getReelOneChoice();
         Selection reelTwo = getReelTwoChoice();
         Selection reelThree = getReelThreeChoice();
+  
 
         if ((reelOne == Selection.APPLE) && (reelTwo == Selection.APPLE) && (reelThree == Selection.APPLE)) {
             System.out.println(prefix + pipe + reelOne + pipe + reelTwo + pipe + reelThree + pipe + winner);
@@ -119,6 +120,71 @@ public class FruitMachine {
         } else if ((reelOne == Selection.ORANGE) && (reelTwo == Selection.PEAR) && (reelThree == Selection.APPLE)) {
             System.out.println(prefix + reelOne + pipe + reelTwo + pipe + reelThree + pipe + loser);
         } else {return loser;}
-            return null;
+        return null;
     }
+
+
+
+
+
+//        if ((reelOne == Selection.APPLE) && (reelTwo == Selection.APPLE) && (reelThree == Selection.APPLE)) {
+//            System.out.println(prefix + pipe + reelOne + pipe + reelTwo + pipe + reelThree + pipe + winner);
+//        } else if ((reelOne == Selection.APPLE) && (reelTwo == Selection.APPLE) && (reelThree == Selection.PEAR)) {
+//            System.out.println(prefix + reelOne + pipe + reelTwo + pipe + reelThree + pipe + loser);
+//        } else if ((reelOne == Selection.APPLE) && (reelTwo == Selection.PEAR) && (reelThree == Selection.APPLE)) {
+//            System.out.println(prefix + reelOne + pipe + reelTwo + pipe + reelThree + pipe + loser);
+//        } else if ((reelOne == Selection.PEAR) && (reelTwo == Selection.APPLE) && (reelThree == Selection.APPLE)) {
+//            System.out.println(prefix + reelOne + pipe + reelTwo + pipe + reelThree + pipe + loser);
+//        } else if ((reelOne == Selection.APPLE) && (reelTwo == Selection.APPLE) && (reelThree == Selection.ORANGE)) {
+//            System.out.println(prefix + reelOne + pipe + reelTwo + pipe + reelThree + pipe + loser);
+//        } else if ((reelOne == Selection.APPLE) && (reelTwo == Selection.ORANGE) && (reelThree == Selection.APPLE)) {
+//            System.out.println(prefix + reelOne + pipe + reelTwo + pipe + reelThree + pipe + loser);
+//        } else if ((reelOne == Selection.ORANGE) && (reelTwo == Selection.APPLE) && (reelThree == Selection.APPLE)) {
+//            System.out.println(prefix + reelOne + pipe + reelTwo + pipe + reelThree + pipe + loser);
+//        } else if ((reelOne == Selection.APPLE) && (reelTwo == Selection.PEAR) && (reelThree == Selection.ORANGE)) {
+//            System.out.println(prefix + reelOne + pipe + reelTwo + pipe + reelThree + pipe + loser);
+//        } else if ((reelOne == Selection.APPLE) && (reelTwo == Selection.ORANGE) && (reelThree == Selection.PEAR)) {
+//            System.out.println(prefix + reelOne + pipe + reelTwo + pipe + reelThree + pipe + loser);
+//        } else if ((reelOne == Selection.PEAR) && (reelTwo == Selection.PEAR) && (reelThree == Selection.PEAR)) {
+//            System.out.println(prefix + reelOne + pipe + reelTwo + pipe + reelThree + pipe + winner);
+//        } else if ((reelOne == Selection.PEAR) && (reelTwo == Selection.PEAR) && (reelThree == Selection.APPLE)) {
+//            System.out.println(prefix + reelOne + pipe + reelTwo + pipe + reelThree + pipe + loser);
+//        } else if ((reelOne == Selection.PEAR) && (reelTwo == Selection.APPLE) && (reelThree == Selection.PEAR)) {
+//            System.out.println(prefix + reelOne + pipe + reelTwo + pipe + reelThree + pipe + loser);
+//        } else if ((reelOne == Selection.APPLE) && (reelTwo == Selection.PEAR) && (reelThree == Selection.PEAR)) {
+//            System.out.println(prefix + reelOne + pipe + reelTwo + pipe + reelThree + pipe + loser);
+//        } else if ((reelOne == Selection.PEAR) && (reelTwo == Selection.PEAR) && (reelThree == Selection.ORANGE)) {
+//            System.out.println(prefix + reelOne + pipe + reelTwo + pipe + reelThree + pipe + loser);
+//        } else if ((reelOne == Selection.PEAR) && (reelTwo == Selection.ORANGE) && (reelThree == Selection.PEAR)) {
+//            System.out.println(prefix + reelOne + pipe + reelTwo + pipe + reelThree + pipe + loser);
+//        } else if ((reelOne == Selection.ORANGE) && (reelTwo == Selection.PEAR) && (reelThree == Selection.PEAR)) {
+//            System.out.println(prefix + reelOne + pipe + reelTwo + pipe + reelThree + pipe + loser);
+//        } else if ((reelOne == Selection.PEAR) && (reelTwo == Selection.APPLE) && (reelThree == Selection.ORANGE)) {
+//            System.out.println(prefix + reelOne + pipe + reelTwo + pipe + reelThree + pipe + loser);
+//        } else if ((reelOne == Selection.PEAR) && (reelTwo == Selection.ORANGE) && (reelThree == Selection.APPLE)) {
+//            System.out.println(prefix + reelOne + pipe + reelTwo + pipe + reelThree + pipe + loser);
+//        } else if ((reelOne == Selection.ORANGE) && (reelTwo == Selection.ORANGE) && (reelThree == Selection.ORANGE)) {
+//            System.out.println(prefix + reelOne + pipe + reelTwo + pipe + reelThree + pipe + winner);
+//        } else if ((reelOne == Selection.ORANGE) && (reelTwo == Selection.ORANGE) && (reelThree == Selection.APPLE)) {
+//            System.out.println(prefix + reelOne + pipe + reelTwo + pipe + reelThree + pipe + loser);
+//        } else if ((reelOne == Selection.ORANGE) && (reelTwo == Selection.APPLE) && (reelThree == Selection.ORANGE)) {
+//            System.out.println(prefix + reelOne + pipe + reelTwo + pipe + reelThree + pipe + loser);
+//        } else if ((reelOne == Selection.APPLE) && (reelTwo == Selection.ORANGE) && (reelThree == Selection.ORANGE)) {
+//            System.out.println(prefix + reelOne + pipe + reelTwo + pipe + reelThree + pipe + loser);
+//        } else if ((reelOne == Selection.ORANGE) && (reelTwo == Selection.ORANGE) && (reelThree == Selection.PEAR)) {
+//            System.out.println(prefix + reelOne + pipe + reelTwo + pipe + reelThree + pipe + loser);
+//        } else if ((reelOne == Selection.ORANGE) && (reelTwo == Selection.PEAR) && (reelThree == Selection.ORANGE)) {
+//            System.out.println(prefix + reelOne + pipe + reelTwo + pipe + reelThree + pipe + loser);
+//        } else if ((reelOne == Selection.PEAR) && (reelTwo == Selection.ORANGE) && (reelThree == Selection.ORANGE)) {
+//            System.out.println(prefix + reelOne + pipe + reelTwo + pipe + reelThree + pipe + loser);
+//        } else if ((reelOne == Selection.ORANGE) && (reelTwo == Selection.APPLE) && (reelThree == Selection.PEAR)) {
+//            System.out.println(prefix + reelOne + pipe + reelTwo + pipe + reelThree + pipe + loser);
+//        } else if ((reelOne == Selection.ORANGE) && (reelTwo == Selection.PEAR) && (reelThree == Selection.APPLE)) {
+//            System.out.println(prefix + reelOne + pipe + reelTwo + pipe + reelThree + pipe + loser);
+//        } else {return loser;}
+//            return null;
+//    }
+
+
+
 }

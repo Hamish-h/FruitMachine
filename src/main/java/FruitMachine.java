@@ -8,8 +8,8 @@ public class FruitMachine {
 
     String prefix;
     String pipe;
-    String winner;
-    String loser;
+    String winnerMessage;
+    String loserMessage;
     String postfix;
     Integer cashWinnings;
     Integer playerCredits;
@@ -21,8 +21,8 @@ public class FruitMachine {
 
             this.prefix = "Spinning... <";
             this.pipe = " | ";
-            this.winner = "> Congratulations, you have won £";
-            this.loser = "> You lose, care to try again, winnings £";
+            this.winnerMessage = "> Congratulations, you have won £";
+            this.loserMessage = "> You lose, care to try again, winnings £";
             this.postfix =", credits remaining £";
 
             this.playerCredits = 20;
@@ -75,23 +75,23 @@ public class FruitMachine {
 
         if ((reelOne == Selection.APPLE) && (reelTwo == Selection.APPLE) && (reelThree == Selection.APPLE)) {
             cashWinnings = (cashWinnings + 25);
-            System.out.println(prefix + pipe + reelOne + pipe + reelTwo + pipe + reelThree + pipe + winner + cashWinnings + postfix + playerCredits);
+            System.out.println(prefix + pipe + reelOne + pipe + reelTwo + pipe + reelThree + pipe + winnerMessage + cashWinnings + postfix + playerCredits);
         }
 
         else if ((reelOne == Selection.PEAR) && (reelTwo == Selection.PEAR) && (reelThree == Selection.PEAR)) {
             cashWinnings = (cashWinnings + 25);
-            System.out.println(prefix + pipe + reelOne + pipe + reelTwo + pipe + reelThree + pipe + winner + cashWinnings + postfix + playerCredits);
+            System.out.println(prefix + pipe + reelOne + pipe + reelTwo + pipe + reelThree + pipe + winnerMessage + cashWinnings + postfix + playerCredits);
         }
 
         else if ((reelOne == Selection.ORANGE) && (reelTwo == Selection.ORANGE) && (reelThree == Selection.ORANGE)) {
             cashWinnings = (cashWinnings + 25);
-            System.out.println(prefix + pipe + reelOne + pipe + reelTwo + pipe + reelThree + pipe + winner + cashWinnings + postfix + playerCredits);
+            System.out.println(prefix + pipe + reelOne + pipe + reelTwo + pipe + reelThree + pipe + winnerMessage + cashWinnings + postfix + playerCredits);
         }
 
         else {
             cashWinnings = (cashWinnings);
-            System.out.println(prefix + pipe + reelOne + pipe + reelTwo + pipe + reelThree + pipe + loser + cashWinnings + postfix + playerCredits);
-            return loser;
-        }   return winner;
+            System.out.println(prefix + pipe + reelOne + pipe + reelTwo + pipe + reelThree + pipe + loserMessage + cashWinnings + postfix + playerCredits); return loserMessage;
+        }
+        return loserMessage;
     }
 }

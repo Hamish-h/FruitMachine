@@ -12,9 +12,10 @@ public class FruitMachineTest {
     @Before
     public void before(){
         fruitMachine = new FruitMachine(Selection.APPLE, Selection.ORANGE, Selection.PEAR);
-        fruitMachine.setReelOneChoice(Selection.PEAR);
-        fruitMachine.setReelTwoChoice(Selection.PEAR);
-        fruitMachine.setReelThreeChoice(Selection.PEAR);
+        //
+//        fruitMachine.setReelOneChoice(Selection.PEAR);
+//        fruitMachine.setReelTwoChoice(Selection.PEAR);
+//        fruitMachine.setReelThreeChoice(Selection.PEAR);
     }
 
     @Test
@@ -36,7 +37,7 @@ public class FruitMachineTest {
 
     @Test
     public void CanSpin(){
-        assertSame(fruitMachine.loser, fruitMachine.getReels());
+        assertSame(fruitMachine.loserMessage, fruitMachine.getReels());
     }
 
     @Test
@@ -54,8 +55,8 @@ public class FruitMachineTest {
 //        fruitMachine.setReelOneChoice(Selection.PEAR);
 //        fruitMachine.setReelTwoChoice(Selection.PEAR);
 //        fruitMachine.setReelThreeChoice(Selection.PEAR);
-        assertEquals(Selection.PEAR, fruitMachine.getReelOneChoice());
-        assertEquals(Selection.PEAR, fruitMachine.getReelTwoChoice());
+        assertEquals(Selection.APPLE, fruitMachine.getReelOneChoice());
+        assertEquals(Selection.ORANGE, fruitMachine.getReelTwoChoice());
         assertEquals(Selection.PEAR, fruitMachine.getReelThreeChoice());
     }
 

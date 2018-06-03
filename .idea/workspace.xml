@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2494ea82-c48d-4ef7-84e4-10a78b9a6fd2" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/test/classes/FruitMachineTest.class" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/FruitMachine.java" afterPath="$PROJECT_DIR$/src/main/java/FruitMachine.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/FruitMachineTest.java" afterPath="$PROJECT_DIR$/src/test/java/FruitMachineTest.java" />
     </list>
@@ -22,7 +21,7 @@
     </projectState>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.47612295">
+    <splitter split-orientation="horizontal" split-proportion="0.49503547">
       <split-first>
         <splitter split-orientation="horizontal" split-proportion="0.18667835">
           <split-first>
@@ -44,17 +43,17 @@
               <file leaf-file-name="FruitMachine.java" pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/src/main/java/FruitMachine.java">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="388">
-                      <caret line="77" column="36" lean-forward="true" selection-start-line="77" selection-start-column="36" selection-end-line="77" selection-end-column="36" />
+                    <state relative-caret-position="1241">
+                      <caret line="89" column="0" lean-forward="true" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
                       <folding>
-                        <element signature="e#1222#1223#0" expanded="true" />
-                        <element signature="e#1280#1281#0" expanded="true" />
-                        <element signature="e#1790#1791#0" expanded="true" />
-                        <element signature="e#1834#1835#0" expanded="true" />
-                        <element signature="e#1881#1882#0" expanded="true" />
-                        <element signature="e#1925#1926#0" expanded="true" />
-                        <element signature="e#1974#1975#0" expanded="true" />
-                        <element signature="e#2020#2021#0" expanded="true" />
+                        <element signature="e#1250#1251#0" expanded="true" />
+                        <element signature="e#1308#1309#0" expanded="true" />
+                        <element signature="e#1818#1819#0" expanded="true" />
+                        <element signature="e#1862#1863#0" expanded="true" />
+                        <element signature="e#1909#1910#0" expanded="true" />
+                        <element signature="e#1953#1954#0" expanded="true" />
+                        <element signature="e#2002#2003#0" expanded="true" />
+                        <element signature="e#2048#2049#0" expanded="true" />
                       </folding>
                     </state>
                   </provider>
@@ -69,18 +68,18 @@
           <file leaf-file-name="FruitMachineTest.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/test/java/FruitMachineTest.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="645">
-                  <caret line="43" column="57" lean-forward="true" selection-start-line="43" selection-start-column="57" selection-end-line="43" selection-end-column="57" />
+                <state relative-caret-position="300">
+                  <caret line="20" column="9" lean-forward="true" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
                   <folding>
                     <element signature="imports" expanded="true" />
-                    <element signature="e#602#603#0" expanded="true" />
-                    <element signature="e#691#692#0" expanded="true" />
-                    <element signature="e#743#744#0" expanded="true" />
-                    <element signature="e#834#835#0" expanded="true" />
-                    <element signature="e#884#885#0" expanded="true" />
-                    <element signature="e#971#972#0" expanded="true" />
-                    <element signature="e#1085#1086#0" expanded="true" />
-                    <element signature="e#1156#1157#0" expanded="true" />
+                    <element signature="e#619#620#0" expanded="true" />
+                    <element signature="e#708#709#0" expanded="true" />
+                    <element signature="e#760#761#0" expanded="true" />
+                    <element signature="e#851#852#0" expanded="true" />
+                    <element signature="e#901#902#0" expanded="true" />
+                    <element signature="e#988#989#0" expanded="true" />
+                    <element signature="e#1102#1103#0" expanded="true" />
+                    <element signature="e#1180#1181#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -394,8 +393,8 @@
       <list>
         <option value="$PROJECT_DIR$/src/main/java/Selection.java" />
         <option value="$PROJECT_DIR$/src/main/java/ChoiceType.java" />
-        <option value="$PROJECT_DIR$/src/test/java/FruitMachineTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/FruitMachine.java" />
+        <option value="$PROJECT_DIR$/src/test/java/FruitMachineTest.java" />
       </list>
     </option>
   </component>
@@ -689,10 +688,10 @@
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="JUnit.FruitMachineTest.CanSpin" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.FruitMachineTest.CanGetLoser" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.FruitMachineTest.CanGetWinner" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.FruitMachineTest.canGetSelectionApple" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.FruitMachineTest" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.FruitMachineTest.CanGetWinner" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.FruitMachineTest.CanGetLoser" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.FruitMachineTest" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.FruitMachineTest.canGetSelectionApple" />
       </list>
     </recent_temporary>
   </component>
@@ -710,34 +709,34 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="FruitMachineTest_CanGetLoser - 2018.06.03 at 20h 19m 36s.xml">
-      <configuration name="FruitMachineTest.CanGetLoser" configurationId="JUnit" />
+    <history-entry file="FruitMachineTest_CanGetWinner - 2018.06.03 at 20h 46m 09s.xml">
+      <configuration name="FruitMachineTest.CanGetWinner" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FruitMachineTest_CanGetLoser - 2018.06.03 at 20h 19m 38s.xml">
-      <configuration name="FruitMachineTest.CanGetLoser" configurationId="JUnit" />
+    <history-entry file="FruitMachineTest_CanGetWinner - 2018.06.03 at 20h 46m 23s.xml">
+      <configuration name="FruitMachineTest.CanGetWinner" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FruitMachineTest_CanGetLoser - 2018.06.03 at 20h 19m 40s.xml">
-      <configuration name="FruitMachineTest.CanGetLoser" configurationId="JUnit" />
+    <history-entry file="FruitMachineTest_CanGetWinner - 2018.06.03 at 20h 46m 35s.xml">
+      <configuration name="FruitMachineTest.CanGetWinner" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FruitMachineTest_CanSpin - 2018.06.03 at 20h 19m 48s.xml">
+    <history-entry file="FruitMachineTest_CanGetWinner - 2018.06.03 at 20h 49m 03s.xml">
+      <configuration name="FruitMachineTest.CanGetWinner" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FruitMachineTest_CanGetWinner - 2018.06.03 at 20h 49m 09s.xml">
+      <configuration name="FruitMachineTest.CanGetWinner" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FruitMachineTest_CanGetWinner - 2018.06.03 at 20h 49m 19s.xml">
+      <configuration name="FruitMachineTest.CanGetWinner" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FruitMachineTest_CanSpin - 2018.06.03 at 20h 49m 46s.xml">
       <configuration name="FruitMachineTest.CanSpin" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FruitMachineTest_CanSpin - 2018.06.03 at 20h 22m 36s.xml">
+    <history-entry file="FruitMachineTest_CanSpin - 2018.06.03 at 20h 49m 50s.xml">
       <configuration name="FruitMachineTest.CanSpin" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FruitMachineTest_CanSpin - 2018.06.03 at 20h 23m 07s.xml">
+    <history-entry file="FruitMachineTest_CanSpin - 2018.06.03 at 20h 49m 52s.xml">
       <configuration name="FruitMachineTest.CanSpin" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FruitMachineTest_CanSpin - 2018.06.03 at 20h 23m 26s.xml">
-      <configuration name="FruitMachineTest.CanSpin" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FruitMachineTest_CanSpin - 2018.06.03 at 20h 23m 33s.xml">
-      <configuration name="FruitMachineTest.CanSpin" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FruitMachineTest_CanSpin - 2018.06.03 at 20h 23m 36s.xml">
-      <configuration name="FruitMachineTest.CanSpin" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FruitMachineTest_CanSpin - 2018.06.03 at 20h 23m 40s.xml">
+    <history-entry file="FruitMachineTest_CanSpin - 2018.06.03 at 20h 49m 54s.xml">
       <configuration name="FruitMachineTest.CanSpin" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -800,37 +799,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/FruitMachineTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/FruitMachine.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="645">
-          <caret line="43" column="57" lean-forward="true" selection-start-line="43" selection-start-column="57" selection-end-line="43" selection-end-column="57" />
+        <state relative-caret-position="1241">
+          <caret line="89" column="0" lean-forward="true" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#602#603#0" expanded="true" />
-            <element signature="e#691#692#0" expanded="true" />
-            <element signature="e#743#744#0" expanded="true" />
-            <element signature="e#834#835#0" expanded="true" />
-            <element signature="e#884#885#0" expanded="true" />
-            <element signature="e#971#972#0" expanded="true" />
-            <element signature="e#1085#1086#0" expanded="true" />
-            <element signature="e#1156#1157#0" expanded="true" />
+            <element signature="e#1250#1251#0" expanded="true" />
+            <element signature="e#1308#1309#0" expanded="true" />
+            <element signature="e#1818#1819#0" expanded="true" />
+            <element signature="e#1862#1863#0" expanded="true" />
+            <element signature="e#1909#1910#0" expanded="true" />
+            <element signature="e#1953#1954#0" expanded="true" />
+            <element signature="e#2002#2003#0" expanded="true" />
+            <element signature="e#2048#2049#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/FruitMachine.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/FruitMachineTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="388">
-          <caret line="77" column="36" lean-forward="true" selection-start-line="77" selection-start-column="36" selection-end-line="77" selection-end-column="36" />
+        <state relative-caret-position="300">
+          <caret line="20" column="9" lean-forward="true" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
           <folding>
-            <element signature="e#1222#1223#0" expanded="true" />
-            <element signature="e#1280#1281#0" expanded="true" />
-            <element signature="e#1790#1791#0" expanded="true" />
-            <element signature="e#1834#1835#0" expanded="true" />
-            <element signature="e#1881#1882#0" expanded="true" />
-            <element signature="e#1925#1926#0" expanded="true" />
-            <element signature="e#1974#1975#0" expanded="true" />
-            <element signature="e#2020#2021#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#619#620#0" expanded="true" />
+            <element signature="e#708#709#0" expanded="true" />
+            <element signature="e#760#761#0" expanded="true" />
+            <element signature="e#851#852#0" expanded="true" />
+            <element signature="e#901#902#0" expanded="true" />
+            <element signature="e#988#989#0" expanded="true" />
+            <element signature="e#1102#1103#0" expanded="true" />
+            <element signature="e#1180#1181#0" expanded="true" />
           </folding>
         </state>
       </provider>

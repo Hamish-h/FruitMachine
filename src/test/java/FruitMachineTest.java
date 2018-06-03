@@ -1,5 +1,6 @@
 import org.junit.Before;
 import org.junit.Test;
+import sun.net.www.ApplicationLaunchException;
 
 import static org.junit.Assert.assertEquals;
 
@@ -25,6 +26,14 @@ public class FruitMachineTest {
     @Test
     public void canGetSelectionPear(){
         assertEquals(Selection.PEAR, fruitMachine.getSelection(Selection.PEAR));
+    }
+
+    @Test
+    public void CanGetSelectionAppleAppleApple(){
+        fruitMachine.setReelOneChoice(Selection.APPLE);
+        fruitMachine.setReelTwoChoice(Selection.APPLE);
+        fruitMachine.setReelThreeChoice(Selection.APPLE);
+        assertEquals("Congratulations", fruitMachine.getReels());
     }
 
 }

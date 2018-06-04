@@ -18,7 +18,7 @@ public class FruitMachine extends Runner {
     public FruitMachine(){
 
         // System.out.println messages for 'getReels'
-        this.prefix = "FRUIT MACHINE SPINNING REELS";
+        this.prefix = "FRUIT MACHINE";
         this.line = "=================================";
         this.pipe = " <|> ";
         this.winnerMessage = "Congratulations, you have won £";

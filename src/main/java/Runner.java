@@ -2,6 +2,14 @@ public class Runner {
 
     public static void main(String[] args) {
 
+//        FruitMachine fruitMachine = new FruitMachine();
+//        fruitMachine.generateAllChoices();
+//        fruitMachine.getReels();
+//
+//
+//    }
+//}
+
         boolean game = true;
         Integer gamePlay = 0;
 
@@ -29,5 +37,5 @@ public class Runner {
 
             }
         }
-    }
+  }
 }

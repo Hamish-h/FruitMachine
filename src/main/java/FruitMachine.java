@@ -71,6 +71,8 @@ public class FruitMachine {
         Selection reelTwo = getReelTwoChoice();
         Selection reelThree = getReelThreeChoice();
 
+        playerCredits -= 1;
+
         if ((reelOne == Selection.APPLE) && (reelTwo == Selection.APPLE) && (reelThree == Selection.APPLE)) {
             cashWinnings = (cashWinnings + 25);
             System.out.println(prefix + pipe + reelOne + pipe + reelTwo + pipe + reelThree + pipe + winnerMessage + cashWinnings + postfix + playerCredits);

@@ -1,23 +1,21 @@
+import java.security.PrivateKey;
 import java.util.Random;
 
 public class FruitMachine {
 
-        Selection reelOneChoice;
-        Selection reelTwoChoice;
-        Selection reelThreeChoice;
+        private Selection reelOneChoice;
+        private Selection reelTwoChoice;
+        private Selection reelThreeChoice;
 
-        String prefix;
-        String pipe;
-        String winnerMessage;
-        String loserMessage;
-        String postfix;
-        Integer cashWinnings;
-        Integer playerCredits;
+        private String prefix;
+        private String pipe;
+        private String winnerMessage;
+        private String loserMessage;
+        private String postfix;
+        private Integer cashWinnings;
+        private Integer playerCredits;
 
-        public void FruitMachineStart(Selection reelOneChoice, Selection reelTwoChoice, Selection reelThreeChoice) {
-            this.reelOneChoice = reelOneChoice;
-            this.reelTwoChoice = reelTwoChoice;
-            this.reelThreeChoice = reelThreeChoice;
+        public FruitMachine(){
 
             // System.out.println messages for 'getReels'
             this.prefix = "Spinning... <";
@@ -28,6 +26,7 @@ public class FruitMachine {
 
             this.playerCredits = 20;
             this.cashWinnings = 0;
+
         }
 
     public Selection randomiseReelChoice() {
@@ -37,23 +36,23 @@ public class FruitMachine {
         return array[select];
     }
 
-    public Selection getSelection(Selection choice) {
-        return this.reelOneChoice = choice;
+    public void generateAllChoices(){
+        this.setReelOneChoice();
+        this.setReelTwoChoice();
+        this.setReelThreeChoice();
     }
 
-    public void setReelOneChoice(Selection choice) {
-        choice = randomiseReelChoice();
-        this.reelOneChoice = choice;
+
+    public void setReelOneChoice() {
+        this.reelOneChoice = randomiseReelChoice();
     }
 
-    public void setReelTwoChoice(Selection choice) {
-        choice = randomiseReelChoice();
-        this.reelTwoChoice = choice;
+    public void setReelTwoChoice() {
+        this.reelTwoChoice = randomiseReelChoice();
     }
 
-    public void setReelThreeChoice(Selection choice) {
-        choice = randomiseReelChoice();
-        this.reelThreeChoice = choice;
+    public void setReelThreeChoice() {
+        this.reelThreeChoice = randomiseReelChoice();
     }
 
     public Selection getReelOneChoice() {

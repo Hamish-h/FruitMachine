@@ -12,48 +12,27 @@ public class FruitMachineTest {
     @Before
     public void before(){
         fruitMachine = new FruitMachine();
-        fruitMachine.FruitMachineStart(Selection.APPLE, Selection.ORANGE, Selection.PEAR);
-        //
-//        fruitMachine.setReelOneChoice(Selection.PEAR);
-//        fruitMachine.setReelTwoChoice(Selection.PEAR);
-//        fruitMachine.setReelThreeChoice(Selection.PEAR);
-    }
-
-    @Test
-    public void canGetSelectionApple(){
-        assertEquals(Selection.APPLE, fruitMachine.getSelection(Selection.APPLE));
-    }
-
-    @Test
-    public void canGetSelectionOrange(){
-        assertEquals(Selection.ORANGE, fruitMachine.getSelection(Selection.ORANGE));
-    }
-
-    @Test
-    public void canGetSelectionPear(){
-        assertEquals(Selection.PEAR, fruitMachine.getSelection(Selection.PEAR));
     }
 
     // Fruit machine uses random selection so tests can both pass and fail
 
     @Test
-    public void CanGetGame(){
-//        fruitMachine.setReelOneChoice(Selection.APPLE);
-//        fruitMachine.setReelTwoChoice(Selection.ORANGE);
-//        fruitMachine.setReelThreeChoice(Selection.PEAR);
-        assertSame(fruitMachine.loserMessage, fruitMachine.getReels());
+    public void CanGameSpin(){
+        fruitMachine.generateAllChoices();
+        // get our three choices
+        Selection choiceOne = fruitMachine.getReelOneChoice();
+        Selection choiceTwo = fruitMachine.getReelTwoChoice();
+        Selection choiceThree = fruitMachine.getReelThreeChoice();
+        // check they are all of type Selection
+        assertEquals(choiceOne instanceof Selection, true);
+        assertEquals(choiceTwo instanceof Selection, true);
+        assertEquals(choiceThree instanceof Selection, true);
     }
 
-//    @Test
-//    public void CanGetWinner(){
-//        fruitMachine.setReelOneChoice(Selection.PEAR);
-//        fruitMachine.setReelTwoChoice(Selection.PEAR);
-//        fruitMachine.setReelThreeChoice(Selection.PEAR);
-//        assertEquals(Selection.APPLE, fruitMachine.getReelOneChoice());
-//        assertEquals(Selection.ORANGE, fruitMachine.getReelTwoChoice());
-//        assertEquals(Selection.PEAR, fruitMachine.getReelThreeChoice());
-//    }
+    @Test
 
+
+    // seed randomiser later ???
 
 }
 

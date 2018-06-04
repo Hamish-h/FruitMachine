@@ -1,4 +1,5 @@
 import org.omg.CORBA.FREE_MEM;
+import sun.plugin2.os.windows.SECURITY_ATTRIBUTES;
 
 public class Runner {
 
@@ -6,9 +7,6 @@ public class Runner {
 
         FruitMachine fruitMachine = new FruitMachine();
         fruitMachine.randomiseReelChoice();
-        fruitMachine.getReelOneChoice();
-        fruitMachine.getReelTwoChoice();
-        fruitMachine.getReelThreeChoice();
         fruitMachine.getReels();
     }
 }

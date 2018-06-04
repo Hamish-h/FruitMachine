@@ -40,7 +40,7 @@ public class Runner extends FruitMachine {
             }
 
             // player exits game
-            if (gamePlay == 2){
+            if (gamePlay != 1){
                 System.out.println("Game Over - Collect any Payout!!!");
                 game = false;
 

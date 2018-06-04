@@ -14,7 +14,7 @@ public class FruitMachine {
         Integer cashWinnings;
         Integer playerCredits;
 
-        public FruitMachine(Selection reelOneChoice, Selection reelTwoChoice, Selection reelThreeChoice) {
+        public void FruitMachineStart(Selection reelOneChoice, Selection reelTwoChoice, Selection reelThreeChoice) {
             this.reelOneChoice = reelOneChoice;
             this.reelTwoChoice = reelTwoChoice;
             this.reelThreeChoice = reelThreeChoice;

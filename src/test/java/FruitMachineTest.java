@@ -11,7 +11,8 @@ public class FruitMachineTest {
 
     @Before
     public void before(){
-        fruitMachine = new FruitMachine(Selection.APPLE, Selection.ORANGE, Selection.PEAR);
+        fruitMachine = new FruitMachine();
+        fruitMachine.FruitMachineStart(Selection.APPLE, Selection.ORANGE, Selection.PEAR);
         //
 //        fruitMachine.setReelOneChoice(Selection.PEAR);
 //        fruitMachine.setReelTwoChoice(Selection.PEAR);
@@ -37,9 +38,9 @@ public class FruitMachineTest {
 
     @Test
     public void CanGetGame(){
-        fruitMachine.setReelOneChoice(Selection.APPLE);
-        fruitMachine.setReelTwoChoice(Selection.ORANGE);
-        fruitMachine.setReelThreeChoice(Selection.PEAR);
+//        fruitMachine.setReelOneChoice(Selection.APPLE);
+//        fruitMachine.setReelTwoChoice(Selection.ORANGE);
+//        fruitMachine.setReelThreeChoice(Selection.PEAR);
         assertSame(fruitMachine.loserMessage, fruitMachine.getReels());
     }
 
@@ -52,6 +53,7 @@ public class FruitMachineTest {
 //        assertEquals(Selection.ORANGE, fruitMachine.getReelTwoChoice());
 //        assertEquals(Selection.PEAR, fruitMachine.getReelThreeChoice());
 //    }
-//
+
+
 }
 

@@ -1,4 +1,3 @@
-import java.security.PrivateKey;
 import java.util.Random;
 
 public class FruitMachine {
@@ -18,7 +17,7 @@ public class FruitMachine {
         public FruitMachine(){
 
             // System.out.println messages for 'getReels'
-            this.prefix = "Spinning... <";
+            this.prefix = "Spinning reels ... <";
             this.pipe = " | ";
             this.winnerMessage = "> Congratulations, you have won £";
             this.loserMessage = "> You lose, care to try again, winnings £";
@@ -41,7 +40,6 @@ public class FruitMachine {
         this.setReelTwoChoice();
         this.setReelThreeChoice();
     }
-
 
     public void setReelOneChoice() {
         this.reelOneChoice = randomiseReelChoice();

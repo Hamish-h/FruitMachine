@@ -6,7 +6,7 @@ public class Runner {
     public static void main(String[] args) {
 
         FruitMachine fruitMachine = new FruitMachine();
-        fruitMachine.randomiseReelChoice();
+        fruitMachine.generateAllChoices();
         fruitMachine.getReels();
     }
 }

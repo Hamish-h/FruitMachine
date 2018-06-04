@@ -19,20 +19,25 @@ public class FruitMachineTest {
     @Test
     public void CanGameSpin(){
         fruitMachine.generateAllChoices();
-        // get our three choices
+        // get three choices
         Selection choiceOne = fruitMachine.getReelOneChoice();
         Selection choiceTwo = fruitMachine.getReelTwoChoice();
         Selection choiceThree = fruitMachine.getReelThreeChoice();
-        // check they are all of type Selection
+        // compare they are all type Selection
         assertEquals(choiceOne instanceof Selection, true);
         assertEquals(choiceTwo instanceof Selection, true);
         assertEquals(choiceThree instanceof Selection, true);
     }
 
     @Test
+    public void CanGetAnyRandomAnswer(){
+        fruitMachine.generateAllChoices();
+        Selection choiceOne = fruitMachine.getReelOneChoice();
+        assertEquals(Selection.APPLE, fruitMachine.getReelOneChoice());
+    }
 
 
-    // seed randomiser later ???
+    // seed randomiser (test only) later ???
 
 }
 

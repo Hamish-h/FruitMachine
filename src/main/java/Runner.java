@@ -9,14 +9,6 @@ public class Runner extends FruitMachine {
 
     public static void main(String[] args) {
 
-//        FruitMachine fruitMachine = new FruitMachine();
-//        fruitMachine.generateAllChoices();
-//        fruitMachine.getReels();
-//
-//
-//    }
-//}
-
         // User instructions
         System.out.println("Enter 1 to play the game");
 
@@ -56,3 +48,15 @@ public class Runner extends FruitMachine {
         }
     }
 }
+
+
+
+
+
+//        FruitMachine fruitMachine = new FruitMachine();
+//        fruitMachine.generateAllChoices();
+//        fruitMachine.getReels();
+//
+//
+//    }
+//}

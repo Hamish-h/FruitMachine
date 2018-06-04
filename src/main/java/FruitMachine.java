@@ -12,8 +12,8 @@ public class FruitMachine {
     private String winnerMessage;
     private String losingMessage;
     private String postfix;
-    public Integer cashWinnings;
-    public Integer playerCredits;
+    private Integer cashWinnings;
+    private Integer playerCredits;
 
     public FruitMachine(){
 

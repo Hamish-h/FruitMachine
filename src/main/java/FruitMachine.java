@@ -1,32 +1,33 @@
 import java.util.Random;
 
-public class FruitMachine {
+public class FruitMachine extends Runner {
 
-        private Selection reelOneChoice;
-        private Selection reelTwoChoice;
-        private Selection reelThreeChoice;
+    private Selection reelOneChoice;
+    private Selection reelTwoChoice;
+    private Selection reelThreeChoice;
 
-        private String prefix;
-        private String pipe;
-        private String winnerMessage;
-        private String loserMessage;
-        private String postfix;
-        private Integer cashWinnings;
-        private Integer playerCredits;
+    private String prefix;
+    private String line;
+    private String pipe;
+    private String winnerMessage;
+    private String losingMessage;
+    private String postfix;
+    public Integer cashWinnings;
+    public Integer playerCredits;
 
-        public FruitMachine(){
+    public FruitMachine(){
 
-            // System.out.println messages for 'getReels'
-            this.prefix = "Spinning reels ... <";
-            this.pipe = " | ";
-            this.winnerMessage = "> Congratulations, you have won £";
-            this.loserMessage = "> You lose, care to try again, winnings £";
-            this.postfix = ", credits remaining £";
+        // System.out.println messages for 'getReels'
+        this.prefix = "FRUIT MACHINE SPINNING REELS";
+        this.line = "=================================";
+        this.pipe = " <|> ";
+        this.winnerMessage = "Congratulations, you have won £";
+        this.losingMessage = "No wins, try again, winnings £";
+        this.postfix = "Your remaining credit is £";
 
-            this.playerCredits = 20;
-            this.cashWinnings = 0;
-
-        }
+        this.playerCredits = 20;
+        this.cashWinnings = 0;
+    }
 
     public Selection randomiseReelChoice() {
         Selection[] array = {Selection.APPLE, Selection.ORANGE, Selection.PEAR};
@@ -73,21 +74,38 @@ public class FruitMachine {
 
         playerCredits -= 1;
 
+        System.out.println(prefix);
+        System.out.println(line);
+
         if ((reelOne == Selection.APPLE) && (reelTwo == Selection.APPLE) && (reelThree == Selection.APPLE)) {
             cashWinnings = (cashWinnings + 25);
-            System.out.println(prefix + pipe + reelOne + pipe + reelTwo + pipe + reelThree + pipe + winnerMessage + cashWinnings + postfix + playerCredits);
+            System.out.println(pipe + reelOne + pipe + reelTwo + pipe + reelThree + pipe);
+            System.out.println(line);
+            System.out.println(winnerMessage + cashWinnings);
+            System.out.println(postfix + playerCredits);
+
         } else if ((reelOne == Selection.PEAR) && (reelTwo == Selection.PEAR) && (reelThree == Selection.PEAR)) {
             cashWinnings = (cashWinnings + 25);
-            System.out.println(prefix + pipe + reelOne + pipe + reelTwo + pipe + reelThree + pipe + winnerMessage + cashWinnings + postfix + playerCredits);
+            System.out.println(pipe + reelOne + pipe + reelTwo + pipe + reelThree + pipe);
+            System.out.println(line);
+            System.out.println(winnerMessage + cashWinnings);
+            System.out.println(postfix + playerCredits);
+
         } else if ((reelOne == Selection.ORANGE) && (reelTwo == Selection.ORANGE) && (reelThree == Selection.ORANGE)) {
             cashWinnings = (cashWinnings + 25);
-            System.out.println(prefix + pipe + reelOne + pipe + reelTwo + pipe + reelThree + pipe + winnerMessage + cashWinnings + postfix + playerCredits);
+            System.out.println(pipe + reelOne + pipe + reelTwo + pipe + reelThree + pipe);
+            System.out.println(line);
+            System.out.println(winnerMessage + cashWinnings);
+            System.out.println(postfix + playerCredits);
+
         } else {
             cashWinnings = (cashWinnings);
-            System.out.println(prefix + pipe + reelOne + pipe + reelTwo + pipe + reelThree + pipe + loserMessage + cashWinnings + postfix + playerCredits);
-            return loserMessage;
-        }
-        return loserMessage;
+            System.out.println(pipe + reelOne + pipe + reelTwo + pipe + reelThree + pipe);
+            System.out.println(line);
+            System.out.println(losingMessage + cashWinnings);
+            System.out.println(postfix + playerCredits); return losingMessage;
+        }   return losingMessage;
+
     }
 }
 

@@ -1,6 +1,11 @@
 import java.util.Scanner;
 
-public class Runner {
+public class Runner extends FruitMachine {
+
+    // bring in playerCredits
+    public Runner(Integer playerCredits){
+        super(this.playerCredits);
+    }
 
     public static void main(String[] args) {
 
@@ -11,7 +16,6 @@ public class Runner {
 //
 //    }
 //}
-
 
         // User instructions
         System.out.println("Enter 1 to play the game");

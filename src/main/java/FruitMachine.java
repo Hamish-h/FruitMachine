@@ -1,6 +1,6 @@
 import java.util.Random;
 
-public class FruitMachine extends Runner {
+public class FruitMachine {
 
     private Selection reelOneChoice;
     private Selection reelTwoChoice;
@@ -78,7 +78,7 @@ public class FruitMachine extends Runner {
         System.out.println(line);
 
         if ((reelOne == Selection.APPLE) && (reelTwo == Selection.APPLE) && (reelThree == Selection.APPLE)) {
-            cashWinnings = (cashWinnings + 25);
+            cashWinnings = (cashWinnings + 30);
             System.out.println(pipe + reelOne + pipe + reelTwo + pipe + reelThree + pipe);
             System.out.println(line);
             System.out.println(winnerMessage + cashWinnings);
@@ -92,7 +92,7 @@ public class FruitMachine extends Runner {
             System.out.println(postfix + playerCredits);
 
         } else if ((reelOne == Selection.ORANGE) && (reelTwo == Selection.ORANGE) && (reelThree == Selection.ORANGE)) {
-            cashWinnings = (cashWinnings + 25);
+            cashWinnings = (cashWinnings + 20);
             System.out.println(pipe + reelOne + pipe + reelTwo + pipe + reelThree + pipe);
             System.out.println(line);
             System.out.println(winnerMessage + cashWinnings);

@@ -1,9 +1,7 @@
 import org.junit.Before;
 import org.junit.Test;
-import sun.net.www.ApplicationLaunchException;
 
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertSame;
 
 public class FruitMachineTest {
 

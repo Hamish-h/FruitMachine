@@ -13,7 +13,9 @@ public class Runner {
 
             // Set player instructions
             System.out.println();
+            System.out.println();
             System.out.println("Enter 1 to play : 2 to exit!");
+            System.out.println();
             System.out.println();
 
             // Get player input

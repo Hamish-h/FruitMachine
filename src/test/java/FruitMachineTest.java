@@ -15,7 +15,7 @@ public class FruitMachineTest {
     @Test
     public void CanGameSpin(){
         fruitMachine.generateAllChoices();
-        // get three choices
+        // get three choices, reel1, reel2, reel3
         Selection choiceOne = fruitMachine.getReelOneChoice();
         Selection choiceTwo = fruitMachine.getReelTwoChoice();
         Selection choiceThree = fruitMachine.getReelThreeChoice();

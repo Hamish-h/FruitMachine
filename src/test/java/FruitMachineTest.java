@@ -52,7 +52,6 @@ public class FruitMachineTest {
         assertEquals(Selection.PEAR, fruitMachine.getReelThreeChoice());
     }
 
-
     // seed randomiser (test only) later ???
     // read mocking
 

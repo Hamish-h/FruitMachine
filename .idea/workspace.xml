@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2494ea82-c48d-4ef7-84e4-10a78b9a6fd2" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/Runner.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/FruitMachine.java" afterPath="$PROJECT_DIR$/src/main/java/FruitMachine.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Player.java" afterPath="$PROJECT_DIR$/src/main/java/Player.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Runner.java" afterPath="$PROJECT_DIR$/src/main/java/Runner.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/FruitMachineTest.java" afterPath="$PROJECT_DIR$/src/test/java/FruitMachineTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -28,8 +29,8 @@
           <file leaf-file-name="Runner.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/java/Runner.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="927">
-                  <caret line="68" column="12" lean-forward="true" selection-start-line="68" selection-start-column="12" selection-end-line="68" selection-end-column="12" />
+                <state relative-caret-position="762">
+                  <caret line="121" column="0" lean-forward="true" selection-start-line="121" selection-start-column="0" selection-end-line="121" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -42,21 +43,21 @@
           <file leaf-file-name="FruitMachine.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/FruitMachine.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="375">
-                  <caret line="25" column="3" lean-forward="false" selection-start-line="25" selection-start-column="3" selection-end-line="25" selection-end-column="3" />
+                <state relative-caret-position="1515">
+                  <caret line="101" column="37" lean-forward="true" selection-start-line="101" selection-start-column="37" selection-end-line="101" selection-end-column="37" />
                   <folding>
-                    <element signature="e#1407#1408#0" expanded="true" />
-                    <element signature="e#1465#1466#0" expanded="true" />
-                    <element signature="e#1503#1504#0" expanded="true" />
-                    <element signature="e#1561#1562#0" expanded="true" />
-                    <element signature="e#1601#1602#0" expanded="true" />
-                    <element signature="e#1661#1662#0" expanded="true" />
-                    <element signature="e#1704#1705#0" expanded="true" />
-                    <element signature="e#1740#1741#0" expanded="true" />
-                    <element signature="e#1783#1784#0" expanded="true" />
-                    <element signature="e#1819#1820#0" expanded="true" />
-                    <element signature="e#1864#1865#0" expanded="true" />
-                    <element signature="e#1902#1903#0" expanded="true" />
+                    <element signature="e#1428#1429#0" expanded="true" />
+                    <element signature="e#1486#1487#0" expanded="true" />
+                    <element signature="e#1519#1520#0" expanded="true" />
+                    <element signature="e#1577#1578#0" expanded="true" />
+                    <element signature="e#1612#1613#0" expanded="true" />
+                    <element signature="e#1672#1673#0" expanded="true" />
+                    <element signature="e#1730#1731#0" expanded="true" />
+                    <element signature="e#1766#1767#0" expanded="true" />
+                    <element signature="e#1804#1805#0" expanded="true" />
+                    <element signature="e#1840#1841#0" expanded="true" />
+                    <element signature="e#1880#1881#0" expanded="true" />
+                    <element signature="e#1918#1919#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -65,13 +66,11 @@
           <file leaf-file-name="Player.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/java/Player.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="240">
-                  <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+                <state relative-caret-position="105">
+                  <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
                   <folding>
-                    <element signature="e#118#119#0" expanded="true" />
-                    <element signature="e#154#155#0" expanded="true" />
-                    <element signature="e#184#185#0" expanded="true" />
-                    <element signature="e#218#219#0" expanded="true" />
+                    <element signature="e#82#83#0" expanded="true" />
+                    <element signature="e#108#109#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -80,8 +79,8 @@
           <file leaf-file-name="FruitMachineTest.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/test/java/FruitMachineTest.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="315">
-                  <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+                <state relative-caret-position="720">
+                  <caret line="53" column="0" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -113,11 +112,19 @@
     <findStrings>
       <find>prefix</find>
       <find>payout</find>
+      <find>playerMoney</find>
+      <find>playerWallet</find>
+      <find>cCard</find>
+      <find>playerCCard</find>
     </findStrings>
     <replaceStrings>
       <replace>pipe</replace>
       <replace>line01</replace>
       <replace>playerPayout</replace>
+      <replace>playerCash</replace>
+      <replace>playerCCard</replace>
+      <replace>visaCard</replace>
+      <replace>PlayerVisaCard</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -411,9 +418,10 @@
       <list>
         <option value="$PROJECT_DIR$/src/main/java/Selection.java" />
         <option value="$PROJECT_DIR$/src/main/java/ChoiceType.java" />
+        <option value="$PROJECT_DIR$/src/test/java/PlayerTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/FruitMachineTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/FruitMachine.java" />
         <option value="$PROJECT_DIR$/src/main/java/Runner.java" />
+        <option value="$PROJECT_DIR$/src/main/java/FruitMachine.java" />
         <option value="$PROJECT_DIR$/src/main/java/Player.java" />
       </list>
     </option>
@@ -500,7 +508,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -557,15 +565,15 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="FruitMachineTest.CanGetAnyRandomAnswerReelOne" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PlayerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="com.codeclan.fruitmachine_test" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="FruitMachineTest" />
-      <option name="METHOD_NAME" value="CanGetAnyRandomAnswerReelOne" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" value="PlayerTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
@@ -577,14 +585,14 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="FruitMachineTest.CanGetAnyRandomAnswerReelTwo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PlayerTest.canGetMoney" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="com.codeclan.fruitmachine_test" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="FruitMachineTest" />
-      <option name="METHOD_NAME" value="CanGetAnyRandomAnswerReelTwo" />
+      <option name="MAIN_CLASS_NAME" value="PlayerTest" />
+      <option name="METHOD_NAME" value="canGetMoney" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -694,18 +702,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="JUnit.FruitMachineTest.CanGameSpin" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.FruitMachineTest.CanGetAnyRandomAnswerReelTwo" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.FruitMachineTest.CanGetAnyRandomAnswerReelOne" />
-      <item index="3" class="java.lang.String" itemvalue="Application.Runner" />
-      <item index="4" class="java.lang.String" itemvalue="Application.FruitMachine" />
+      <item index="1" class="java.lang.String" itemvalue="Application.Runner" />
+      <item index="2" class="java.lang.String" itemvalue="Application.FruitMachine" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.PlayerTest.canGetMoney" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.PlayerTest" />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Application.Runner" />
-        <item index="1" class="java.lang.String" itemvalue="Application.FruitMachine" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.FruitMachineTest.CanGameSpin" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.FruitMachineTest.CanGetAnyRandomAnswerReelOne" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.FruitMachineTest.CanGetAnyRandomAnswerReelTwo" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.FruitMachineTest.CanGameSpin" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.PlayerTest.canGetMoney" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.PlayerTest" />
+        <item index="4" class="java.lang.String" itemvalue="Application.FruitMachine" />
       </list>
     </recent_temporary>
   </component>
@@ -723,35 +731,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="FruitMachineTest_CanGameSpin - 2018.06.04 at 20h 39m 27s.xml">
+    <history-entry file="FruitMachineTest_CanGameSpin - 2018.06.05 at 23h 10m 10s.xml">
       <configuration name="FruitMachineTest.CanGameSpin" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FruitMachineTest_CanGetAnyRandomAnswerReelOne - 2018.06.04 at 20h 05m 17s.xml">
-      <configuration name="FruitMachineTest.CanGetAnyRandomAnswerReelOne" configurationId="JUnit" />
+    <history-entry file="FruitMachineTest_CanGameSpin - 2018.06.05 at 23h 10m 36s.xml">
+      <configuration name="FruitMachineTest.CanGameSpin" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FruitMachineTest_CanGetAnyRandomAnswerReelThree - 2018.06.04 at 20h 04m 53s.xml">
-      <configuration name="FruitMachineTest.CanGetAnyRandomAnswerReelThree" configurationId="JUnit" />
+    <history-entry file="PlayerTest - 2018.06.05 at 21h 22m 52s.xml">
+      <configuration name="PlayerTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FruitMachineTest_CanGetAnyRandomAnswerReelThree - 2018.06.04 at 20h 04m 56s.xml">
-      <configuration name="FruitMachineTest.CanGetAnyRandomAnswerReelThree" configurationId="JUnit" />
+    <history-entry file="PlayerTest - 2018.06.05 at 22h 07m 01s.xml">
+      <configuration name="PlayerTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FruitMachineTest_CanGetAnyRandomAnswerReelTwo - 2018.06.04 at 20h 04m 48s.xml">
-      <configuration name="FruitMachineTest.CanGetAnyRandomAnswerReelTwo" configurationId="JUnit" />
+    <history-entry file="PlayerTest - 2018.06.05 at 22h 08m 19s.xml">
+      <configuration name="PlayerTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FruitMachineTest_CanGetAnyRandomAnswerReelTwo - 2018.06.04 at 20h 05m 00s.xml">
-      <configuration name="FruitMachineTest.CanGetAnyRandomAnswerReelTwo" configurationId="JUnit" />
+    <history-entry file="PlayerTest_canGetMoney - 2018.06.05 at 21h 20m 17s.xml">
+      <configuration name="PlayerTest.canGetMoney" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FruitMachineTest_CanGetAnyRandomAnswerReelTwo - 2018.06.04 at 20h 05m 03s.xml">
-      <configuration name="FruitMachineTest.CanGetAnyRandomAnswerReelTwo" configurationId="JUnit" />
+    <history-entry file="PlayerTest_canGetMoney - 2018.06.05 at 21h 21m 23s.xml">
+      <configuration name="PlayerTest.canGetMoney" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FruitMachineTest_CanGetAnyRandomAnswerReelTwo - 2018.06.04 at 20h 05m 07s.xml">
-      <configuration name="FruitMachineTest.CanGetAnyRandomAnswerReelTwo" configurationId="JUnit" />
+    <history-entry file="PlayerTest_canGetMoney - 2018.06.05 at 21h 21m 31s.xml">
+      <configuration name="PlayerTest.canGetMoney" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FruitMachineTest_CanGetAnyRandomAnswerReelTwo - 2018.06.04 at 20h 05m 09s.xml">
-      <configuration name="FruitMachineTest.CanGetAnyRandomAnswerReelTwo" configurationId="JUnit" />
+    <history-entry file="PlayerTest_canGetMoney - 2018.06.05 at 21h 22m 48s.xml">
+      <configuration name="PlayerTest.canGetMoney" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FruitMachineTest_CanGetAnyRandomAnswerReelTwo - 2018.06.04 at 20h 05m 13s.xml">
-      <configuration name="FruitMachineTest.CanGetAnyRandomAnswerReelTwo" configurationId="JUnit" />
+    <history-entry file="PlayerTest_canGetMoney - 2018.06.05 at 23h 10m 04s.xml">
+      <configuration name="PlayerTest.canGetMoney" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -760,14 +768,14 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2026699" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20189004" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297491" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.185567" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22508591" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3288835" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -844,51 +852,63 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/FruitMachineTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+        <state relative-caret-position="720">
+          <caret line="53" column="0" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/FruitMachine.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/PlayerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="3" lean-forward="false" selection-start-line="25" selection-start-column="3" selection-end-line="25" selection-end-column="3" />
+        <state relative-caret-position="300">
+          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding>
-            <element signature="e#1407#1408#0" expanded="true" />
-            <element signature="e#1465#1466#0" expanded="true" />
-            <element signature="e#1503#1504#0" expanded="true" />
-            <element signature="e#1561#1562#0" expanded="true" />
-            <element signature="e#1601#1602#0" expanded="true" />
-            <element signature="e#1661#1662#0" expanded="true" />
-            <element signature="e#1704#1705#0" expanded="true" />
-            <element signature="e#1740#1741#0" expanded="true" />
-            <element signature="e#1783#1784#0" expanded="true" />
-            <element signature="e#1819#1820#0" expanded="true" />
-            <element signature="e#1864#1865#0" expanded="true" />
-            <element signature="e#1902#1903#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Player.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding>
-            <element signature="e#118#119#0" expanded="true" />
-            <element signature="e#154#155#0" expanded="true" />
-            <element signature="e#184#185#0" expanded="true" />
-            <element signature="e#218#219#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#178#179#0" expanded="true" />
+            <element signature="e#215#216#0" expanded="true" />
+            <element signature="e#257#258#0" expanded="true" />
+            <element signature="e#309#310#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Runner.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="927">
-          <caret line="68" column="12" lean-forward="true" selection-start-line="68" selection-start-column="12" selection-end-line="68" selection-end-column="12" />
+        <state relative-caret-position="762">
+          <caret line="121" column="0" lean-forward="true" selection-start-line="121" selection-start-column="0" selection-end-line="121" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/FruitMachine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1515">
+          <caret line="101" column="37" lean-forward="true" selection-start-line="101" selection-start-column="37" selection-end-line="101" selection-end-column="37" />
+          <folding>
+            <element signature="e#1428#1429#0" expanded="true" />
+            <element signature="e#1486#1487#0" expanded="true" />
+            <element signature="e#1519#1520#0" expanded="true" />
+            <element signature="e#1577#1578#0" expanded="true" />
+            <element signature="e#1612#1613#0" expanded="true" />
+            <element signature="e#1672#1673#0" expanded="true" />
+            <element signature="e#1730#1731#0" expanded="true" />
+            <element signature="e#1766#1767#0" expanded="true" />
+            <element signature="e#1804#1805#0" expanded="true" />
+            <element signature="e#1840#1841#0" expanded="true" />
+            <element signature="e#1880#1881#0" expanded="true" />
+            <element signature="e#1918#1919#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding>
+            <element signature="e#82#83#0" expanded="true" />
+            <element signature="e#108#109#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

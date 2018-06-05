@@ -20,13 +20,14 @@ public class FruitMachine {
 
         // machine output messages for 'getReels'
         this.prefix = "-=- CODECLAN FRUIT MACHINE -=-";
-        this.line = "=================================";
-        this.pipe = " <|> ";
+        this.line = "==============================";
+        this.pipe = "<|>";
         this.winnerTotal = "        WINNINGS   £";
         this.winnerMessage = "Congratulations, YOU HAVE WON";
-        this.losingMessage = "You didn't win this time, try again?";
+        this.losingMessage = "Unlucky this time, try again?";
         this.postfix = "Your remaining credit is £";
 
+        // values
         this.playerCredits = 0;
         this.cashWinnings = 0;
     }
@@ -44,41 +45,39 @@ public class FruitMachine {
         this.setReelThreeChoice();
     }
 
+    // setters
     public void setReelOneChoice() {
         this.reelOneChoice = randomiseReelChoice();
-    }
-
-    public void setReelTwoChoice() {
+    } public void setReelTwoChoice() {
         this.reelTwoChoice = randomiseReelChoice();
-    }
-
-    public void setReelThreeChoice() {
+    } public void setReelThreeChoice() {
         this.reelThreeChoice = randomiseReelChoice();
     }
 
+    // getters
     public Selection getReelOneChoice() {
         return reelOneChoice;
-    }
-
-    public Selection getReelTwoChoice() {
+    } public Selection getReelTwoChoice() {
         return reelTwoChoice;
-    }
-
-    public Selection getReelThreeChoice() {
+    } public Selection getReelThreeChoice() {
         return reelThreeChoice;
     }
 
+    // get reel choice
     public String getReels() {
-
         Selection reelOne = getReelOneChoice();
         Selection reelTwo = getReelTwoChoice();
         Selection reelThree = getReelThreeChoice();
 
+        // deduct credits
         playerCredits -= 1;
 
+        // display output
+        System.out.println(line);
         System.out.println(prefix);
         System.out.println(line);
 
+            // winning line of three apples £30
         if ((reelOne == Selection.APPLE) && (reelTwo == Selection.APPLE) && (reelThree == Selection.APPLE)) {
             cashWinnings = (cashWinnings + 30);
             System.out.println(pipe + reelOne + pipe + reelTwo + pipe + reelThree + pipe);
@@ -87,6 +86,7 @@ public class FruitMachine {
             System.out.println(winnerTotal + cashWinnings);
             System.out.println(postfix + playerCredits);
 
+            // winning line of three pears £25
         } else if ((reelOne == Selection.PEAR) && (reelTwo == Selection.PEAR) && (reelThree == Selection.PEAR)) {
             cashWinnings = (cashWinnings + 25);
             System.out.println(pipe + reelOne + pipe + reelTwo + pipe + reelThree + pipe);
@@ -95,6 +95,7 @@ public class FruitMachine {
             System.out.println(winnerTotal + cashWinnings);
             System.out.println(postfix + playerCredits);
 
+            // winning line of three oranges £20
         } else if ((reelOne == Selection.ORANGE) && (reelTwo == Selection.ORANGE) && (reelThree == Selection.ORANGE)) {
             cashWinnings = (cashWinnings + 20);
             System.out.println(pipe + reelOne + pipe + reelTwo + pipe + reelThree + pipe);
@@ -103,6 +104,7 @@ public class FruitMachine {
             System.out.println(winnerTotal + cashWinnings);
             System.out.println(postfix + playerCredits);
 
+            // losing line
         } else {
             cashWinnings = (cashWinnings);
             System.out.println(pipe + reelOne + pipe + reelTwo + pipe + reelThree + pipe);

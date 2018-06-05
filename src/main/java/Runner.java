@@ -6,8 +6,24 @@ public class Runner {
 
         FruitMachine fruitMachine = new FruitMachine();
 
+
+
+        Integer playerMoney;
         Integer playerInput;
         boolean runGame = true;
+
+        // Set player instructions
+        System.out.println();
+        System.out.println();
+        System.out.println("ENTER £££ COINS");
+        System.out.println();
+        System.out.println();
+
+        // get players money
+        Scanner getPlayerMoney = new Scanner(System.in);
+        playerMoney = getPlayerMoney.nextInt();
+
+        fruitMachine.playerCredits = playerMoney;
 
         while (runGame) {
 
@@ -33,7 +49,7 @@ public class Runner {
 
                 // exit clause if no credit
                 if (fruitMachine.playerCredits == 0){
-                    System.out.println("Credit Required - Game Over - Collect any Winnings!");
+                    System.out.println("Game Over - Collect any Winnings!");
                     runGame = false;
                 }
 

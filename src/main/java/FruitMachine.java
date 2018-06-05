@@ -72,7 +72,7 @@ public class FruitMachine {
         Selection reelTwo = getReelTwoChoice();
         Selection reelThree = getReelThreeChoice();
 
-        playerCredits -= 1;
+//        playerCredits -= 1;
 
         System.out.println(prefix);
         System.out.println(line);

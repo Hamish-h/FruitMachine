@@ -18,11 +18,11 @@ public class FruitMachine {
 
     public FruitMachine(){
 
-        // System.out.println messages for 'getReels'
-        this.prefix = "@|@ CODECLAN FRUIT MACHINE @|@";
+        // machine output messages for 'getReels'
+        this.prefix = "-=- CODECLAN FRUIT MACHINE -=-";
         this.line = "=================================";
         this.pipe = " <|> ";
-        this.winnerTotal = "     WINNINGS   £";
+        this.winnerTotal = "        WINNINGS   £";
         this.winnerMessage = "Congratulations, YOU HAVE WON";
         this.losingMessage = "You didn't win this time, try again?";
         this.postfix = "Your remaining credit is £";
@@ -113,6 +113,3 @@ public class FruitMachine {
         }   return losingMessage;
     }
 }
-
-
-

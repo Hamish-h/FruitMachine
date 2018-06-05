@@ -2,41 +2,39 @@ import java.util.Scanner;
 
 public class Runner {
 
-//    // bring in playerCredits
-//    public Runner(Integer playerCredits) {
-//        super(this.playerCredits);
-//    }
-
     public static void main(String[] args) {
 
-        boolean game = true;
         Integer playerCredits = 20;
-        Integer gamePlay;
+        Integer playerInput;
 
-        // User instruct1ions
+        // User instructions
         System.out.println("Enter 1 to play the game");
 
         Scanner getPlayerInput = new Scanner(System.in);
-        gamePlay = getPlayerInput.nextInt();
+        playerInput = getPlayerInput.nextInt();
 
-        while (game = true) {
+        boolean runGame = true;
+
+        while (runGame) {
 
             // User instructions
             System.out.println("Enter 1 to spin the reels : Enter 2 to exit!");
 
+            playerInput = getPlayerInput.nextInt();
+
             // player exits game
-            if (gamePlay == 2){
+            if (playerInput == 2){
                 System.out.println("Game Over - Collect any Payout!!!");
-                game = false;
+                runGame = false;
             }
 
             // player spins
-            if (gamePlay == 1){
+            if (playerInput == 1){
 
                 // exit clause if no credit
                 if (playerCredits == 0){
                     System.out.println("Credit Required - Game Over - Collect any Payout!!!");
-                    game = false;
+                    runGame = false;
                 }
 
                 // player spins reel
@@ -47,19 +45,6 @@ public class Runner {
                     fruitMachine.getReels();
                 }
             }
-
         }
     }
 }
-
-
-
-
-
-//        FruitMachine fruitMachine = new FruitMachine();
-//        fruitMachine.generateAllChoices();
-//        fruitMachine.getReels();
-//
-//
-//    }
-//}

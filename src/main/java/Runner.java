@@ -8,13 +8,14 @@ public class Runner {
 
         Integer playerInput;
         boolean runGame = true;
+        String line = " ";
 
         while (runGame) {
 
             // Set player instructions
-            System.out.println("                            ");
-            System.out.println("@@ CODECLAN FRUIT MACHINE @@");
+            System.out.println();
             System.out.println("Enter 1 to play : 2 to exit!");
+            System.out.println();
 
             // Get player input
             Scanner getPlayerInput = new Scanner(System.in);
@@ -31,13 +32,12 @@ public class Runner {
 
                 // exit clause if no credit
                 if (fruitMachine.playerCredits == 0){
-                    System.out.println("Credit Required - Game Over - Collect any Payout!!!");
+                    System.out.println("Credit Required - Game Over - Collect any Winnings!");
                     runGame = false;
                 }
 
                 // player spins reel
                 else if (fruitMachine.playerCredits != 0){
-
                     fruitMachine.generateAllChoices();
                     fruitMachine.getReels();
                 }

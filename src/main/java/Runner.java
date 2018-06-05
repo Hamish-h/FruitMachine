@@ -8,7 +8,6 @@ public class Runner {
 
         Integer playerInput;
         boolean runGame = true;
-        String line = " ";
 
         while (runGame) {
 

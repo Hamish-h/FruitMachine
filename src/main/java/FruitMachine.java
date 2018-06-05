@@ -13,13 +13,13 @@ public class FruitMachine {
     private String winnerTotal;
     private String losingMessage;
     private String postfix;
-    private Integer cashWinnings;
-    public Integer playerCredits;
+    protected Integer cashWinnings;
+    protected Integer playerCredits;
 
     public FruitMachine(){
 
         // System.out.println messages for 'getReels'
-        this.prefix = "@@ CODECLAN FRUIT MACHINE @@";
+        this.prefix = "@|@ CODECLAN FRUIT MACHINE @|@";
         this.line = "=================================";
         this.pipe = " <|> ";
         this.winnerTotal = "     WINNINGS   £";

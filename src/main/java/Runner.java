@@ -6,33 +6,39 @@ public class Runner {
 
         FruitMachine fruitMachine = new FruitMachine();
 
-
+        String line01 = "@|@ CODECLAN FRUIT MACHINE @|@";
+        String line02 = "     £1 credit per play";
+        String line03 = "        Enter Coins";
+        String line04 = "Enter 1 to play or 2 to exit!";
+        String line05 = "Game Over, the CREDIT and WINNING payout is £";
 
         Integer playerMoney;
         Integer playerInput;
+        Integer payout = 0;
         boolean runGame = true;
 
         // Set player instructions
         System.out.println();
-        System.out.println();
-        System.out.println("ENTER £££ COINS");
-        System.out.println();
+        System.out.println(line01);
+        System.out.println(line02);
+        System.out.println(line03);
         System.out.println();
 
         // get players money
         Scanner getPlayerMoney = new Scanner(System.in);
         playerMoney = getPlayerMoney.nextInt();
 
+        // set values
         fruitMachine.playerCredits = playerMoney;
 
+        // run the FruitMachine
         while (runGame) {
 
             // Set player instructions
             System.out.println();
+            System.out.println(line04);
             System.out.println();
-            System.out.println("Enter 1 to play : 2 to exit!");
-            System.out.println();
-            System.out.println();
+
 
             // Get player input
             Scanner getPlayerInput = new Scanner(System.in);
@@ -40,20 +46,22 @@ public class Runner {
 
             // player exits game
             if (playerInput == 2){
-                System.out.println("Game Over - Collect any Payout!!!");
+                payout = fruitMachine.playerCredits + fruitMachine.cashWinnings;
+                System.out.println(line05 + payout);
                 runGame = false;
             }
 
             // player spins
             if (playerInput == 1){
 
-                // exit clause if no credit
+                // exit and payout if no credit left
                 if (fruitMachine.playerCredits == 0){
-                    System.out.println("Game Over - Collect any Winnings!");
+                    payout = fruitMachine.cashWinnings;
+                    System.out.println(line05 + payout);
                     runGame = false;
                 }
 
-                // player spins reel
+                // player plays game
                 else if (fruitMachine.playerCredits != 0){
                     fruitMachine.generateAllChoices();
                     fruitMachine.getReels();

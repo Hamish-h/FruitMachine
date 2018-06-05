@@ -13,12 +13,12 @@ public class FruitMachine {
     private String losingMessage;
     private String postfix;
     private Integer cashWinnings;
-    private Integer playerCredits;
+    public Integer playerCredits;
 
     public FruitMachine(){
 
         // System.out.println messages for 'getReels'
-        this.prefix = "FRUIT MACHINE";
+        this.prefix = "@@ CODECLAN FRUIT MACHINE @@";
         this.line = "=================================";
         this.pipe = " <|> ";
         this.winnerMessage = "Congratulations, you have won £";
@@ -72,7 +72,7 @@ public class FruitMachine {
         Selection reelTwo = getReelTwoChoice();
         Selection reelThree = getReelThreeChoice();
 
-//        playerCredits -= 1;
+        playerCredits -= 1;
 
         System.out.println(prefix);
         System.out.println(line);
@@ -105,7 +105,6 @@ public class FruitMachine {
             System.out.println(losingMessage + cashWinnings);
             System.out.println(postfix + playerCredits); return losingMessage;
         }   return losingMessage;
-
     }
 }
 

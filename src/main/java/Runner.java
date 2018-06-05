@@ -4,22 +4,20 @@ public class Runner {
 
     public static void main(String[] args) {
 
-        Integer playerCredits = 20;
+        FruitMachine fruitMachine = new FruitMachine();
+
         Integer playerInput;
-
-        // User instructions
-        System.out.println("Enter 1 to play the game");
-
-        Scanner getPlayerInput = new Scanner(System.in);
-        playerInput = getPlayerInput.nextInt();
-
         boolean runGame = true;
 
         while (runGame) {
 
-            // User instructions
-            System.out.println("Enter 1 to spin the reels : Enter 2 to exit!");
+            // Set player instructions
+            System.out.println("                            ");
+            System.out.println("@@ CODECLAN FRUIT MACHINE @@");
+            System.out.println("Enter 1 to play : 2 to exit!");
 
+            // Get player input
+            Scanner getPlayerInput = new Scanner(System.in);
             playerInput = getPlayerInput.nextInt();
 
             // player exits game
@@ -32,15 +30,14 @@ public class Runner {
             if (playerInput == 1){
 
                 // exit clause if no credit
-                if (playerCredits == 0){
+                if (fruitMachine.playerCredits == 0){
                     System.out.println("Credit Required - Game Over - Collect any Payout!!!");
                     runGame = false;
                 }
 
                 // player spins reel
-                else if (playerCredits != 0){
-                    playerCredits -= 1;
-                    FruitMachine fruitMachine = new FruitMachine();
+                else if (fruitMachine.playerCredits != 0){
+
                     fruitMachine.generateAllChoices();
                     fruitMachine.getReels();
                 }

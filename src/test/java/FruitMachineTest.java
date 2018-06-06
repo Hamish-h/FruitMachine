@@ -13,22 +13,14 @@ public class FruitMachineTest {
         fruitMachine = new FruitMachine();
     }
 
-//    @Test
-//    public void canGetPlayerCredits(){
-//        assertEquals(10, fruitMachine.playerCredits);
-//    }
+    @Test
+    public void canGetPlayerCredits(){
+        assertEquals(0, fruitMachine.getNumberOfPlayerCredits());
+    }
 
     @Test
-    public void CanGameSpin(){
-        fruitMachine.generateAllChoices();
-        // get three choices, reel1, reel2, reel3
-        Selection choiceOne = fruitMachine.getReelOneChoice();
-        Selection choiceTwo = fruitMachine.getReelTwoChoice();
-        Selection choiceThree = fruitMachine.getReelThreeChoice();
-        // compare they are all of type Selection
-        assertEquals(choiceOne instanceof Selection, true);
-        assertEquals(choiceTwo instanceof Selection, true);
-        assertEquals(choiceThree instanceof Selection, true);
+    public void canGetCashWinnings(){
+        assertEquals(0, fruitMachine.getNumberOfCashWinnings());
     }
 
     @Test
@@ -51,6 +43,22 @@ public class FruitMachineTest {
         Selection choiceOne = fruitMachine.getReelThreeChoice();
         assertNotNull(choiceOne);
     }
+
+    @Test
+    public void CanGameSpin(){
+        fruitMachine.generateAllChoices();
+        // get three choices, reel1, reel2, reel3
+        Selection choiceOne = fruitMachine.getReelOneChoice();
+        Selection choiceTwo = fruitMachine.getReelTwoChoice();
+        Selection choiceThree = fruitMachine.getReelThreeChoice();
+        // compare they are all of type Selection
+        assertEquals(choiceOne instanceof Selection, true);
+        assertEquals(choiceTwo instanceof Selection, true);
+        assertEquals(choiceThree instanceof Selection, true);
+    }
+
+
+
 
     // seed randomiser (test only) later ???
     // read mocking

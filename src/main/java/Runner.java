@@ -23,6 +23,7 @@ public class Runner {
         String line12 = "|      £30 Three APPLES       |";
         String line13 = "|      £25 Three PEARS        |";
         String line14 = "|      £20 Three ORANGES      |";
+        String line15 = "|     * * * PAYOUT * * *      |";
 
         // runner values
         Integer PlayerVisaCard;
@@ -37,7 +38,6 @@ public class Runner {
         System.out.println(line00 + "\n" + line01 + "\n" + line12 + "\n" + line13 + "\n" + line14 + "\n" + line02);
 
         // players wallet contents message
-
         System.out.println(line11);
         System.out.println(line06 + player.visaCard() + line07);
         System.out.println(line11 + "\n" + line03);
@@ -94,11 +94,15 @@ public class Runner {
                     System.out.println();
 
                 // set output
+                System.out.println(line11 + "\n" + line15 + "\n" + line01);
                 System.out.println(line11);
                 System.out.println(line05 + playerPayout);
                 System.out.println(line11);
                 System.out.println(line06 + playerTally + line07);
                 System.out.println(line11);
+                java.util.Date date = new java.util.Date();
+                System.out.println(date);
+
                 for (lines = 0; lines <= 2; lines++)
                     System.out.println();
                 // end the game
@@ -119,11 +123,15 @@ public class Runner {
                         System.out.println();
 
                     // set output
+                    System.out.println(line11 + "\n" + line15 + "\n" + line01);
                     System.out.println(line11);
                     System.out.println(line05 + playerPayout);
                     System.out.println(line11);
                     System.out.println(line06 + playerTally + line07);
                     System.out.println(line11);
+                    java.util.Date date = new java.util.Date();
+                    System.out.println(date);
+
                     for (lines = 0; lines <= 2; lines++)
                         System.out.println();
                     //end the game

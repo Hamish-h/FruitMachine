@@ -47,11 +47,7 @@ public class FruitMachine {
         return array[select];
     }
 
-
-
     // setters
-
-
     public void generateAllChoices(){
         this.setReelOneChoice();
         this.setReelTwoChoice();
@@ -66,8 +62,8 @@ public class FruitMachine {
     public Selection getReelOneChoice() { return reelOneChoice; }
     public Selection getReelTwoChoice() { return reelTwoChoice; }
     public Selection getReelThreeChoice() { return reelThreeChoice; }
-
-//    public int getNumberOfPlayerCredits(){ return playerCredits; }
+    public int getNumberOfPlayerCredits(){ return playerCredits; }
+    public int getNumberOfCashWinnings(){ return cashWinnings; }
 
     // get reel choice
     public String getReels() {
@@ -79,12 +75,7 @@ public class FruitMachine {
         playerCredits -= 1;
 
         // display output
-        System.out.println(line01);
-        System.out.println(prefix);
-        System.out.println(line02);
-        System.out.println(line03);
-        System.out.println(line04);
-        System.out.println(line01);
+        System.out.println(line01 + "\n" + prefix + "\n" + line02 + "\n" + line03 + "\n" + line04 + "\n" + line01);
 
             // winning line of three apples £30
         if ((reelOne == Selection.APPLE) && (reelTwo == Selection.APPLE) && (reelThree == Selection.APPLE)) {

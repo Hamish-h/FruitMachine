@@ -32,6 +32,7 @@ public class FruitMachine {
         this.cashWinnings = 0;
     }
 
+    // random
     public Selection randomiseReelChoice() {
         Selection[] array = {Selection.APPLE, Selection.ORANGE, Selection.PEAR};
         Random choice = new Random();
@@ -39,29 +40,26 @@ public class FruitMachine {
         return array[select];
     }
 
+
+    // setters
     public void generateAllChoices(){
         this.setReelOneChoice();
         this.setReelTwoChoice();
         this.setReelThreeChoice();
     }
 
-    // setters
-    public void setReelOneChoice() {
-        this.reelOneChoice = randomiseReelChoice();
-    } public void setReelTwoChoice() {
-        this.reelTwoChoice = randomiseReelChoice();
-    } public void setReelThreeChoice() {
-        this.reelThreeChoice = randomiseReelChoice();
-    }
+    public void setReelOneChoice() { this.reelOneChoice = randomiseReelChoice(); }
+
+    public void setReelTwoChoice() { this.reelTwoChoice = randomiseReelChoice(); }
+
+    public void setReelThreeChoice() { this.reelThreeChoice = randomiseReelChoice(); }
 
     // getters
-    public Selection getReelOneChoice() {
-        return reelOneChoice;
-    } public Selection getReelTwoChoice() {
-        return reelTwoChoice;
-    } public Selection getReelThreeChoice() {
-        return reelThreeChoice;
-    }
+    public Selection getReelOneChoice() { return reelOneChoice; }
+
+    public Selection getReelTwoChoice() { return reelTwoChoice; }
+
+    public Selection getReelThreeChoice() { return reelThreeChoice; }
 
     // get reel choice
     public String getReels() {

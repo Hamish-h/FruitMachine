@@ -1,6 +1,6 @@
 public class Player {
 
-    // setting disposable income
+    // set disposable income
     public int visaCard() {
         return 100;
     }

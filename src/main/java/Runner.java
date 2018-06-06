@@ -7,7 +7,7 @@ public class Runner {
         FruitMachine fruitMachine = new FruitMachine();
         Player player = new Player();
 
-        // user interface messages for player
+        // user messages for player
         String line00 = "==============================";
         String line01 = "|   CODECLANS FRUIT MACHINE   |";
         String line02 = "|     £1  Credit per play     |";
@@ -84,10 +84,18 @@ public class Runner {
                 playerPayout = fruitMachine.playerCredits + fruitMachine.cashWinnings;
                 playerTally = (playerPayout + PlayerVisaCard);
                 // set output
+                System.out.println();
+                System.out.println();
+                System.out.println();
+                System.out.println();
+                System.out.println();
                 System.out.println(line11);
                 System.out.println(line05 + playerPayout);
+                System.out.println(line11);
                 System.out.println(line06 + playerTally + line07);
                 System.out.println(line11);
+                System.out.println();
+                System.out.println();
                 // end the game
                 runGame = false;
             }
@@ -101,10 +109,18 @@ public class Runner {
                     playerPayout = fruitMachine.cashWinnings;
                     playerTally = (playerPayout + PlayerVisaCard);
                     // set output
+                    System.out.println();
+                    System.out.println();
+                    System.out.println();
+                    System.out.println();
+                    System.out.println();
                     System.out.println(line11);
                     System.out.println(line05 + playerPayout);
+                    System.out.println(line11);
                     System.out.println(line06 + playerTally + line07);
                     System.out.println(line11);
+                    System.out.println();
+                    System.out.println();
                     //end the game
                     runGame = false;
                 }

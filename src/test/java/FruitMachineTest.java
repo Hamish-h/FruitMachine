@@ -2,6 +2,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
 
 public class FruitMachineTest {
 
@@ -11,6 +12,11 @@ public class FruitMachineTest {
     public void before(){
         fruitMachine = new FruitMachine();
     }
+
+//    @Test
+//    public void canGetPlayerCredits(){
+//        assertEquals(10, fruitMachine.playerCredits);
+//    }
 
     @Test
     public void CanGameSpin(){
@@ -25,31 +31,25 @@ public class FruitMachineTest {
         assertEquals(choiceThree instanceof Selection, true);
     }
 
-    // note: Fruit machine uses random selection and test
-    //       can both pass and fail
     @Test
     public void CanGetAnyRandomAnswerReelOne(){
         fruitMachine.generateAllChoices();
         Selection choiceOne = fruitMachine.getReelOneChoice();
-        assertEquals(Selection.APPLE, fruitMachine.getReelOneChoice());
+        assertNotNull(choiceOne);
     }
 
-    // note: Fruit machine uses random selection and test
-    //       can both pass and fail
     @Test
     public void CanGetAnyRandomAnswerReelTwo(){
         fruitMachine.generateAllChoices();
         Selection choiceOne = fruitMachine.getReelTwoChoice();
-        assertEquals(Selection.PEAR, fruitMachine.getReelTwoChoice());
+        assertNotNull(choiceOne);
     }
 
-    // note: Fruit machine uses random selection and test
-    //       can both pass and fail
     @Test
     public void CanGetAnyRandomAnswerReelThree(){
         fruitMachine.generateAllChoices();
         Selection choiceOne = fruitMachine.getReelThreeChoice();
-        assertEquals(Selection.PEAR, fruitMachine.getReelThreeChoice());
+        assertNotNull(choiceOne);
     }
 
     // seed randomiser (test only) later ???

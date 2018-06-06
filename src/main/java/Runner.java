@@ -34,20 +34,14 @@ public class Runner {
         boolean runGame = true;
 
         // player instructions
-        System.out.println();
-        System.out.println(line00);
-        System.out.println(line01);
-        System.out.println(line12);
-        System.out.println(line13);
-        System.out.println(line14);
-
-        System.out.println(line02);
+        System.out.println(line00 + "\n" + line01 + "\n" + line12 + "\n" + line13 + "\n" + line14 + "\n" + line02);
 
         // players wallet contents message
+
         System.out.println(line11);
         System.out.println(line06 + player.visaCard() + line07);
-        System.out.println(line11);
-        System.out.println(line03);
+        System.out.println(line11 + "\n" + line03);
+   //     System.out.println(line03);
 
         // get player input
         Scanner getPlayerMoney = new Scanner(System.in);
@@ -77,9 +71,7 @@ public class Runner {
             // Set player instructions
             System.out.println(line11);
             System.out.println(line06 + PlayerVisaCard + line07);
-            System.out.println(line11);
-            System.out.println(line04);
-            System.out.println(line11);
+            System.out.println(line11 + "\n" + line04 + "\n" + line11);
 
             // Get player input
             Scanner getPlayerInput = new Scanner(System.in);
@@ -107,8 +99,8 @@ public class Runner {
                 System.out.println(line11);
                 System.out.println(line06 + playerTally + line07);
                 System.out.println(line11);
-                System.out.println();
-                System.out.println();
+                for (lines = 0; lines <= 2; lines++)
+                    System.out.println();
                 // end the game
                 runGame = false;
             }
@@ -132,8 +124,8 @@ public class Runner {
                     System.out.println(line11);
                     System.out.println(line06 + playerTally + line07);
                     System.out.println(line11);
-                    System.out.println();
-                    System.out.println();
+                    for (lines = 0; lines <= 2; lines++)
+                        System.out.println();
                     //end the game
                     runGame = false;
                 }
@@ -156,7 +148,7 @@ public class Runner {
 
 
 
-    //    Scanner getPlayerInput = new Scanner(System.in);
+//    Scanner getPlayerInput = new Scanner(System.in);
 
 //    int numeric = 0;
 //    boolean isValid = false;

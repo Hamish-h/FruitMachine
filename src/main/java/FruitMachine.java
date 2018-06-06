@@ -16,8 +16,9 @@ public class FruitMachine {
     private String winnerTotal;
     private String losingMessage;
     private String postfix;
-    protected Integer cashWinnings;
-    protected Integer playerCredits;
+
+    Integer cashWinnings = 0;
+    Integer playerCredits = 0;
 
     public FruitMachine(){
 
@@ -47,7 +48,10 @@ public class FruitMachine {
     }
 
 
+
     // setters
+
+
     public void generateAllChoices(){
         this.setReelOneChoice();
         this.setReelTwoChoice();
@@ -55,17 +59,15 @@ public class FruitMachine {
     }
 
     public void setReelOneChoice() { this.reelOneChoice = randomiseReelChoice(); }
-
     public void setReelTwoChoice() { this.reelTwoChoice = randomiseReelChoice(); }
-
     public void setReelThreeChoice() { this.reelThreeChoice = randomiseReelChoice(); }
 
     // getters
     public Selection getReelOneChoice() { return reelOneChoice; }
-
     public Selection getReelTwoChoice() { return reelTwoChoice; }
-
     public Selection getReelThreeChoice() { return reelThreeChoice; }
+
+//    public int getNumberOfPlayerCredits(){ return playerCredits; }
 
     // get reel choice
     public String getReels() {

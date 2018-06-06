@@ -16,7 +16,7 @@ public class Runner {
         String line05 = "CREDIT REFUND & WINNINGS £";
         String line06 = "You have £";
         String line07 = " on your VisaCard!";
-        String line08 = "You have entered invalid data, try again!";
+        String line08 = "You have entered invalid xx data, try again!";
         String line09 = "That exceeds your VisaCard credit!";
         String line10 = "Invalid amount, enter £1 credit per play!";
         String line11 = "-------------------------------";
@@ -85,6 +85,12 @@ public class Runner {
             Scanner getPlayerInput = new Scanner(System.in);
             playerInput = getPlayerInput.nextInt();
 
+            // exit if player enters any other characters
+            if (playerInput != 1 && playerInput != 2) {
+                System.out.println(line08);
+                runGame = false;
+            }
+
             // player exits game
             if (playerInput == 2){
                 // tally payouts (credits, winnings and visa)
@@ -149,27 +155,23 @@ public class Runner {
 }
 
 
-//            Scanner getPlayerInput = new Scanner(System.in);
-//            int numeric = 0;
-//            boolean isValid = false;
+
+    //    Scanner getPlayerInput = new Scanner(System.in);
+
+//    int numeric = 0;
+//    boolean isValid = false;
 //            while (isValid == false) {
-//                // continue if input is a number
-//                if (getPlayerInput.hasNextInt()) {
+//                    // continue if input is a number
+//                    if (getPlayerInput.hasNextInt()) {
 //                    numeric = getPlayerInput.nextInt();
 //                    isValid = true;
-//                }
-//                // loop for input if not a number,
-//                else {
+//                    }
+//                    // loop for input if not a number,
+//
+//                    else {
 //                    System.out.println(line08);
-//                }
-//                // discard other data
-//                getPlayerInput.nextLine();
-//            }
-////            getPlayerInput.close();
-
-
-// exit if player enters any other characters
-//            if (playerInput != 1 || playerInput != 2) {
-//                System.out.println(line08);
-//                runGame = false;
-//            }
+//                    }
+//                    // discard other data
+//                    getPlayerInput.nextLine();
+//                    }
+//                    getPlayerInput.close();

@@ -53,7 +53,6 @@ public class FruitMachine {
         this.setReelTwoChoice();
         this.setReelThreeChoice();
     }
-
     public void setReelOneChoice() { this.reelOneChoice = randomiseReelChoice(); }
     public void setReelTwoChoice() { this.reelTwoChoice = randomiseReelChoice(); }
     public void setReelThreeChoice() { this.reelThreeChoice = randomiseReelChoice(); }
@@ -65,7 +64,7 @@ public class FruitMachine {
     public int getNumberOfPlayerCredits(){ return playerCredits; }
     public int getNumberOfCashWinnings(){ return cashWinnings; }
 
-    // get reel choice
+    // reel choice
     public String getReels() {
         Selection reelOne = getReelOneChoice();
         Selection reelTwo = getReelTwoChoice();

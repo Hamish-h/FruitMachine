@@ -7,18 +7,18 @@ public class Runner {
         FruitMachine fruitMachine = new FruitMachine();
         Player player = new Player();
 
-        // user messages for player
+        // runner messages for player
         String line00 = "==============================";
         String line01 = "|   CODECLANS FRUIT MACHINE   |";
         String line02 = "|     £1  Credit per play     |";
         String line03 = "=======  BUY CREDITS  ========";
         String line04 = " Enter 1 to play or 2 to exit!";
-        String line05 = "CREDIT REFUND & WINNINGS £";
+        String line05 = " CREDIT REFUND & WINNINGS £";
         String line06 = "You have £";
         String line07 = " on your VisaCard!";
-        String line08 = "You have entered invalid xx data, try again!";
+        String line08 = "Data entered invalid, Game Over!";
         String line09 = "That exceeds your VisaCard credit!";
-        String line10 = "Invalid amount, enter £1 credit per play!";
+        String line10 = "Invalid amount, £1 credit per play!";
         String line11 = "-------------------------------";
         String line12 = "|      £30 Three APPLES       |";
         String line13 = "|      £25 Three PEARS        |";
@@ -33,9 +33,10 @@ public class Runner {
         Integer playerPayout = 0;
         Integer lines;
         boolean runGame = true;
+        java.util.Date date = new java.util.Date();
 
         // player instructions
-        System.out.println(line00 + "\n" + line01 + "\n" + line12 + "\n" + line13 + "\n" + line14 + "\n" + line02);
+        System.out.println(line00 + "\n" + line01 + "\n" + line12 + "\n" + line13 + "\n" + line14 + "\n" + line11 + "\n" + line02);
 
         // players wallet contents message
         System.out.println(line11);
@@ -93,18 +94,18 @@ public class Runner {
                 for (lines = 0; lines <= 20; lines++)
                     System.out.println();
 
-                // set output
-                System.out.println(line11 + "\n" + line15 + "\n" + line01);
-                System.out.println(line11);
+                // set output payout
+                System.out.println(line11 + "\n" + line15 + "\n" + line01 + "\n" + line11);
                 System.out.println(line05 + playerPayout);
                 System.out.println(line11);
                 System.out.println(line06 + playerTally + line07);
-                System.out.println(line11);
-                java.util.Date date = new java.util.Date();
-                System.out.println(date);
+                System.out.println(line11 + "\n" + date + "\n" + line11);
 
+
+                // spacer
                 for (lines = 0; lines <= 2; lines++)
                     System.out.println();
+
                 // end the game
                 runGame = false;
             }
@@ -122,18 +123,17 @@ public class Runner {
                     for (lines = 0; lines <= 20; lines++)
                         System.out.println();
 
-                    // set output
-                    System.out.println(line11 + "\n" + line15 + "\n" + line01);
-                    System.out.println(line11);
+                    // set output payout
+                    System.out.println(line11 + "\n" + line15 + "\n" + line01 + "\n" + line11);
                     System.out.println(line05 + playerPayout);
                     System.out.println(line11);
                     System.out.println(line06 + playerTally + line07);
-                    System.out.println(line11);
-                    java.util.Date date = new java.util.Date();
-                    System.out.println(date);
+                    System.out.println(line11 + "\n" + date + "\n" + line11);
 
+                    // spacer
                     for (lines = 0; lines <= 2; lines++)
                         System.out.println();
+
                     //end the game
                     runGame = false;
                 }
@@ -153,25 +153,3 @@ public class Runner {
         }
     }
 }
-
-
-
-//    Scanner getPlayerInput = new Scanner(System.in);
-
-//    int numeric = 0;
-//    boolean isValid = false;
-//            while (isValid == false) {
-//                    // continue if input is a number
-//                    if (getPlayerInput.hasNextInt()) {
-//                    numeric = getPlayerInput.nextInt();
-//                    isValid = true;
-//                    }
-//                    // loop for input if not a number,
-//
-//                    else {
-//                    System.out.println(line08);
-//                    }
-//                    // discard other data
-//                    getPlayerInput.nextLine();
-//                    }
-//                    getPlayerInput.close();

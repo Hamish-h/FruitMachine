@@ -11,15 +11,18 @@ public class Runner {
         String line00 = "==============================";
         String line01 = "|   CODECLANS FRUIT MACHINE   |";
         String line02 = "|     £1  Credit per play     |";
-        String line03 = "=======  ENTER AMOUNT ========";
+        String line03 = "=======  BUY CREDITS  ========";
         String line04 = " Enter 1 to play or 2 to exit!";
         String line05 = "CREDIT REFUND & WINNINGS £";
         String line06 = "You have £";
         String line07 = " on your VisaCard!";
-        String line08 = " in credits!";
+        String line08 = "You have entered invalid data, try again!";
         String line09 = "That exceeds your VisaCard credit!";
         String line10 = "Invalid amount, enter £1 credit per play!";
         String line11 = "-------------------------------";
+        String line12 = "|      £30 Three APPLES       |";
+        String line13 = "|      £25 Three PEARS        |";
+        String line14 = "|      £20 Three ORANGES      |";
 
         // runner values
         Integer PlayerVisaCard;
@@ -27,12 +30,17 @@ public class Runner {
         Integer playerTally = 0;
         Integer playerInput = 0;
         Integer playerPayout = 0;
+        Integer lines;
         boolean runGame = true;
 
         // player instructions
         System.out.println();
         System.out.println(line00);
         System.out.println(line01);
+        System.out.println(line12);
+        System.out.println(line13);
+        System.out.println(line14);
+
         System.out.println(line02);
 
         // players wallet contents message
@@ -41,24 +49,24 @@ public class Runner {
         System.out.println(line11);
         System.out.println(line03);
 
-        // request player user input
+        // get player input
         Scanner getPlayerMoney = new Scanner(System.in);
         playerCash = getPlayerMoney.nextInt();
 
-            // if input value exceeds wallet contents then exit
-            if (playerCash > 100){
-                System.out.println(line09);
-                runGame = false;
-            }
+        // exit if player input exceeds credit card limit
+        if (playerCash > 100){
+            System.out.println(line09);
+            runGame = false;
+        }
 
-            // if input value zero or less then exit
-            if (playerCash <= 0){
-                System.out.println(line10);
-                runGame = false;
-            }
+        // exit if player enters negative or zero value
+        if (playerCash <= 0){
+            System.out.println(line10);
+            runGame = false;
+        }
 
-            // set values
-            fruitMachine.playerCredits = playerCash;
+        // set values
+        fruitMachine.playerCredits = playerCash;
 
         // run the Fruit Machine Game
         while (runGame) {
@@ -72,23 +80,22 @@ public class Runner {
             System.out.println(line11);
             System.out.println(line04);
             System.out.println(line11);
-            System.out.println();
 
             // Get player input
-                Scanner getPlayerInput = new Scanner(System.in);
-                playerInput = getPlayerInput.nextInt();
-            
+            Scanner getPlayerInput = new Scanner(System.in);
+            playerInput = getPlayerInput.nextInt();
+
             // player exits game
             if (playerInput == 2){
                 // tally payouts (credits, winnings and visa)
                 playerPayout = fruitMachine.playerCredits + fruitMachine.cashWinnings;
                 playerTally = (playerPayout + PlayerVisaCard);
+
+                // clear screen
+                for (lines = 0; lines <= 20; lines++)
+                    System.out.println();
+
                 // set output
-                System.out.println();
-                System.out.println();
-                System.out.println();
-                System.out.println();
-                System.out.println();
                 System.out.println(line11);
                 System.out.println(line05 + playerPayout);
                 System.out.println(line11);
@@ -108,12 +115,12 @@ public class Runner {
                     // tally payouts (winnings and visa)
                     playerPayout = fruitMachine.cashWinnings;
                     playerTally = (playerPayout + PlayerVisaCard);
+
+                    // clear screen
+                    for (lines = 0; lines <= 20; lines++)
+                        System.out.println();
+
                     // set output
-                    System.out.println();
-                    System.out.println();
-                    System.out.println();
-                    System.out.println();
-                    System.out.println();
                     System.out.println(line11);
                     System.out.println(line05 + playerPayout);
                     System.out.println(line11);
@@ -127,6 +134,11 @@ public class Runner {
 
                 // player plays the game
                 else if (fruitMachine.playerCredits != 0){
+
+                    // clear screen
+                    for (lines = 0; lines <= 20; lines++)
+                        System.out.println();
+
                     // run FruitMachine
                     fruitMachine.generateAllChoices();
                     fruitMachine.getReels();
@@ -135,3 +147,29 @@ public class Runner {
         }
     }
 }
+
+
+//            Scanner getPlayerInput = new Scanner(System.in);
+//            int numeric = 0;
+//            boolean isValid = false;
+//            while (isValid == false) {
+//                // continue if input is a number
+//                if (getPlayerInput.hasNextInt()) {
+//                    numeric = getPlayerInput.nextInt();
+//                    isValid = true;
+//                }
+//                // loop for input if not a number,
+//                else {
+//                    System.out.println(line08);
+//                }
+//                // discard other data
+//                getPlayerInput.nextLine();
+//            }
+////            getPlayerInput.close();
+
+
+// exit if player enters any other characters
+//            if (playerInput != 1 || playerInput != 2) {
+//                System.out.println(line08);
+//                runGame = false;
+//            }

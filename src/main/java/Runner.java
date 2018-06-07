@@ -19,6 +19,7 @@ public class Runner {
         String displayBuyCredits = "=======  BUY CREDITS  ========";
         String displayPlayerOptions = "   1 = play   2 = winnings!";
         String displayCreditRefundWinnings = " CREDIT REFUND & WINNINGS £";
+        String displayHasBeenPaid = "    HAS BEEN PAID TO CARD!";
         String displayYouHave = "You have £";
         String displayOnYourVisa = " on your VisaCard!";
         String displayDataInvalidGameOver = "Data entered invalid, Game Over!";
@@ -31,7 +32,7 @@ public class Runner {
         Integer PlayerVisaCard;
         Integer playerCash;
         Integer playerTally;
-        Integer playerInput;
+        Integer playerInput = 0;
         Integer playerPayout;
         Integer validNumber;
         Integer lines;
@@ -50,13 +51,12 @@ public class Runner {
             // player input
             while (!getPlayerMoney.hasNextInt()) {
 
-
                 // validate entry
                 System.out.println(displayInvalidEntry);
                 getPlayerMoney.next(); 
             }
             validNumber = getPlayerMoney.nextInt();
-        } while (validNumber <= 0);
+            } while (validNumber <= 0);
 
         // validated
         System.out.println("\n" + displaySingleLine +"\n" +displayValidEntry + validNumber);
@@ -108,7 +108,7 @@ public class Runner {
                     System.out.println();
 
                 // set output payout
-                System.out.println(displaySingleLine + "\n" + displayPayout + "\n" + displayFruitMachine + "\n" + displaySingleLine + "\n" + displayCreditRefundWinnings + playerPayout + "\n" + displaySingleLine + "\n" + displayYouHave + playerTally + displayOnYourVisa + "\n" + displaySingleLine + "\n" + date + "\n" + displayDoubleLine);
+                System.out.println(displaySingleLine + "\n" + displayPayout + "\n" + displayFruitMachine + "\n" + displaySingleLine + "\n" + displayCreditRefundWinnings + playerPayout + "\n" + displayHasBeenPaid + "\n" + displaySingleLine + "\n" + displayYouHave + playerTally + displayOnYourVisa + "\n" + displaySingleLine + "\n" + date + "\n" + displayDoubleLine);
 
                 // spacer
                 for (lines = 0; lines <= 2; lines++)
@@ -133,7 +133,7 @@ public class Runner {
 
                     // set output payout
 
-                    System.out.println(displaySingleLine + "\n" + displayPayout + "\n" + displayFruitMachine + "\n" + displaySingleLine + "\n" + displayCreditRefundWinnings + playerPayout + "\n" + displaySingleLine + "\n" + displayYouHave + playerTally + displayOnYourVisa + "\n" + displaySingleLine + "\n" + date + "\n" + displayDoubleLine);
+                    System.out.println(displaySingleLine + "\n" + displayPayout + "\n" + displayFruitMachine + "\n" + displaySingleLine + "\n" + displayCreditRefundWinnings + playerPayout + "\n" + displayHasBeenPaid + "\n" + displaySingleLine + "\n" + displayYouHave + playerTally + displayOnYourVisa + "\n" + displaySingleLine + "\n" + date + "\n" + displayDoubleLine);
 
                     // spacer
                     for (lines = 0; lines <= 2; lines++)

@@ -75,7 +75,6 @@ public class FruitMachineTest {
         assertEquals(choiceFive instanceof Selection, true);
     }
 
-
     // seed randomiser (test only) later ???
     // read mocking
 

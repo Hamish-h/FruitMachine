@@ -12,14 +12,14 @@ public class Runner {
         String line01 = "|   CODECLANS FRUIT MACHINE   |";
         String line02 = "|     £1  Credit per play     |";
         String line03 = "=======  BUY CREDITS  ========";
-        String line04 = " Enter 1 to play or 2 to exit!";
+        String line04 = "   1 = play    2 = winnings!";
         String line05 = " CREDIT REFUND & WINNINGS £";
         String line06 = "You have £";
         String line07 = " on your VisaCard!";
         String line08 = "Data entered invalid, Game Over!";
         String line09 = "That exceeds your VisaCard credit!";
         String line10 = "Invalid amount, £1 credit per play!";
-        String line11 = "-------------------------------";
+        String line11 = "------------------------------";
         String line12 = "|  APPLE 3x£30 4x£90 5x£500!  |";
         String line13 = "|  PEARS 3x£30 4x£90 5x£500!  |";
         String line14 = "|  LIMES 3x£30 4x£90 5x£500!  |";

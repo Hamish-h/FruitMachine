@@ -24,29 +24,40 @@ public class Runner {
         String displayDataInvalidGameOver = "Data entered invalid, Game Over!";
         String displayExceedsVisaCredit = "That exceeds your VisaCard credit!";
         String displayInvalidAmount = "Invalid amount, £1 credit per play!";
+        String displayInvalidEntry = "Invalid entry, enter £££ number!";
+        String displayValidEntry = "Purchased credits = ";
 
         // runner values
         Integer PlayerVisaCard;
-        Integer playerCash;
+        Integer playerCash = 0;
         Integer playerTally = 0;
         Integer playerInput = 0;
         Integer playerPayout = 0;
+        Integer validNumber = 0;
         Integer lines;
         boolean runGame = true;
         java.util.Date date = new java.util.Date();
 
         // player instructions
         System.out.println(displayDoubleLine + "\n" + displayFruitMachine + "\n" + displayLineApples + "\n" + displayPears + "\n" + displayLimes + "\n" + displaySingleLine + "\n" + displayCreditPerPlay);
-
-        // players wallet contents message
-        System.out.println(displaySingleLine);
-        System.out.println(displayYouHave + player.visaCard() + displayOnYourVisa);
-        System.out.println(displaySingleLine + "\n" + displayBuyCredits);
-        //     System.out.println(displayBuyCredits);
-
+        
         // get player input
         Scanner getPlayerMoney = new Scanner(System.in);
-        playerCash = getPlayerMoney.nextInt();
+        do {
+            // player message
+            System.out.println(displaySingleLine + "\n" + displayYouHave + player.visaCard() + displayOnYourVisa + "\n" + displaySingleLine + "\n" + displayBuyCredits);
+            // keyboard input
+            while (!getPlayerMoney.hasNextInt()) {
+                // invalid input
+                System.out.println(displayInvalidEntry);
+                getPlayerMoney.next(); 
+            }
+            validNumber = getPlayerMoney.nextInt();
+        } while (validNumber <= 0);
+        // valid input
+        System.out.println("\n" + displaySingleLine +"\n" +displayValidEntry + validNumber);
+        playerCash = validNumber;
+        runGame = true;
 
         // exit if player input exceeds credit card limit
         if (playerCash > 100){
@@ -70,9 +81,7 @@ public class Runner {
             PlayerVisaCard = (player.visaCard() - playerCash);
 
             // Set player instructions
-            System.out.println(displaySingleLine);
-            System.out.println(displayYouHave + PlayerVisaCard + displayOnYourVisa);
-            System.out.println(displaySingleLine + "\n" + displayPlayerOptions + "\n" + displaySingleLine);
+            System.out.println(displaySingleLine + "\n" + displayYouHave + PlayerVisaCard + displayOnYourVisa + "\n" + displaySingleLine + "\n" + displayPlayerOptions + "\n" + displaySingleLine);
 
             // Get player input
             Scanner getPlayerInput = new Scanner(System.in);
@@ -95,12 +104,7 @@ public class Runner {
                     System.out.println();
 
                 // set output payout
-
-                System.out.println(displaySingleLine + "\n" + displayPayout + "\n" + displayFruitMachine + "\n" + displaySingleLine);
-                System.out.println(displayCreditRefundWinnings + playerPayout);
-                System.out.println(displaySingleLine);
-                System.out.println(displayYouHave + playerTally + displayOnYourVisa);
-                System.out.println(displaySingleLine + "\n" + date + "\n" + displayDoubleLine);
+                System.out.println(displaySingleLine + "\n" + displayPayout + "\n" + displayFruitMachine + "\n" + displaySingleLine + "\n" + displayCreditRefundWinnings + playerPayout + "\n" + displaySingleLine + "\n" + displayYouHave + playerTally + displayOnYourVisa + "\n" + displaySingleLine + "\n" + date + "\n" + displayDoubleLine);
 
 
                 // spacer
@@ -125,11 +129,8 @@ public class Runner {
                         System.out.println();
 
                     // set output payout
-                    System.out.println(displaySingleLine + "\n" + displayPayout + "\n" + displayFruitMachine + "\n" + displaySingleLine);
-                    System.out.println(displayCreditRefundWinnings + playerPayout);
-                    System.out.println(displaySingleLine);
-                    System.out.println(displayYouHave + playerTally + displayOnYourVisa);
-                    System.out.println(displaySingleLine + "\n" + date + "\n" + displayDoubleLine);
+
+                    System.out.println(displaySingleLine + "\n" + displayPayout + "\n" + displayFruitMachine + "\n" + displaySingleLine + "\n" + displayCreditRefundWinnings + playerPayout + "\n" + displaySingleLine + "\n" + displayYouHave + playerTally + displayOnYourVisa + "\n" + displaySingleLine + "\n" + date + "\n" + displayDoubleLine);
 
                     // spacer
                     for (lines = 0; lines <= 2; lines++)

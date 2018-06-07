@@ -34,7 +34,7 @@ public class FruitMachine {
         this.displayLinePears = "| PEARS 3x£30 4x£90 5x£500 ! |";
         this.displayLineLimes = "| LIMES 3x£30 4x£90 5x£500 ! |";
         this.displayPipe = "|";
-        this.displayWinnerTotal = "     WINNINGS TOTAL  £";
+        this.displayWinnerTotal = "     WINNINGS TOTAL £";
         this.displayWinnerMessage = "Congratulations, YOU HAVE WON";
         this.displayLosingMessage = "Unlucky this time, try again?";
         this.displayRemainingCredit = "Your remaining credit is £";

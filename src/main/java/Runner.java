@@ -66,7 +66,7 @@ public class Runner {
         // run the Fruit Machine Game
         while (runGame) {
 
-            // adjust wallet contents
+            // adjust visa contents
             PlayerVisaCard = (player.visaCard() - playerCash);
 
             // Set player instructions
@@ -100,7 +100,7 @@ public class Runner {
                 System.out.println(displayCreditRefundWinnings + playerPayout);
                 System.out.println(displaySingleLine);
                 System.out.println(displayYouHave + playerTally + displayOnYourVisa);
-                System.out.println(displaySingleLine + "\n" + date + "\n" + displaySingleLine);
+                System.out.println(displaySingleLine + "\n" + date + "\n" + displayDoubleLine);
 
 
                 // spacer
@@ -129,7 +129,7 @@ public class Runner {
                     System.out.println(displayCreditRefundWinnings + playerPayout);
                     System.out.println(displaySingleLine);
                     System.out.println(displayYouHave + playerTally + displayOnYourVisa);
-                    System.out.println(displaySingleLine + "\n" + date + "\n" + displaySingleLine);
+                    System.out.println(displaySingleLine + "\n" + date + "\n" + displayDoubleLine);
 
                     // spacer
                     for (lines = 0; lines <= 2; lines++)

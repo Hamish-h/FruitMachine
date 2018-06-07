@@ -45,19 +45,35 @@ public class FruitMachineTest {
     }
 
     @Test
+    public void CanGetAnyRandomAnswerReelFour(){
+        fruitMachine.generateAllChoices();
+        Selection choiceOne = fruitMachine.getReelFourChoice();
+        assertNotNull(choiceOne);
+    }
+
+    @Test
+    public void CanGetAnyRandomAnswerReelFive(){
+        fruitMachine.generateAllChoices();
+        Selection choiceOne = fruitMachine.getReelFiveChoice();
+        assertNotNull(choiceOne);
+    }
+
+    @Test
     public void CanGameSpin(){
         fruitMachine.generateAllChoices();
         // get three choices, reel1, reel2, reel3
         Selection choiceOne = fruitMachine.getReelOneChoice();
         Selection choiceTwo = fruitMachine.getReelTwoChoice();
         Selection choiceThree = fruitMachine.getReelThreeChoice();
+        Selection choiceFour = fruitMachine.getReelFourChoice();
+        Selection choiceFive = fruitMachine.getReelFiveChoice();
         // compare they are all of type Selection
         assertEquals(choiceOne instanceof Selection, true);
         assertEquals(choiceTwo instanceof Selection, true);
         assertEquals(choiceThree instanceof Selection, true);
+        assertEquals(choiceFour instanceof Selection, true);
+        assertEquals(choiceFive instanceof Selection, true);
     }
-
-
 
 
     // seed randomiser (test only) later ???

@@ -20,9 +20,9 @@ public class Runner {
         String line09 = "That exceeds your VisaCard credit!";
         String line10 = "Invalid amount, £1 credit per play!";
         String line11 = "-------------------------------";
-        String line12 = "|      £30 Three APPLES       |";
-        String line13 = "|      £25 Three PEARS        |";
-        String line14 = "|      £20 Three ORANGES      |";
+        String line12 = "|  APPLE 3x£30 4x£90 5x£500!  |";
+        String line13 = "|  PEARS 3x£30 4x£90 5x£500!  |";
+        String line14 = "|  LIMES 3x£30 4x£90 5x£500!  |";
         String line15 = "|     * * * PAYOUT * * *      |";
 
         // runner values
@@ -42,7 +42,7 @@ public class Runner {
         System.out.println(line11);
         System.out.println(line06 + player.visaCard() + line07);
         System.out.println(line11 + "\n" + line03);
-   //     System.out.println(line03);
+        //     System.out.println(line03);
 
         // get player input
         Scanner getPlayerMoney = new Scanner(System.in);
@@ -95,6 +95,7 @@ public class Runner {
                     System.out.println();
 
                 // set output payout
+
                 System.out.println(line11 + "\n" + line15 + "\n" + line01 + "\n" + line11);
                 System.out.println(line05 + playerPayout);
                 System.out.println(line11);
@@ -141,7 +142,7 @@ public class Runner {
                 // player plays the game
                 else if (fruitMachine.playerCredits != 0){
 
-                    // clear screen
+                    // clear space
                     for (lines = 0; lines <= 20; lines++)
                         System.out.println();
 

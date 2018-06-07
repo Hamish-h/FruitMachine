@@ -30,7 +30,7 @@ public class Runner {
 
         // runner values
         Integer PlayerVisaCard;
-        Integer playerCash;
+        Integer playerCash = 0;
         Integer playerTally;
         Integer playerInput = 0;
         Integer playerPayout;
@@ -41,27 +41,27 @@ public class Runner {
 
 
         // player instructions
-        System.out.println(displayDoubleLine + "\n" + displayFruitMachine + "\n" + displayLineApples + "\n" + displayPears + "\n" + displayLimes + "\n" + displaySingleLine + "\n" + displayCreditPerPlay);
+        System.out.println(displayDoubleLine + "\n" + displayFruitMachine + "\n" + displayLineApples + "\n"
+                + displayPears + "\n" + displayLimes + "\n" + displaySingleLine + "\n" + displayCreditPerPlay);
         
         // get player input
         Scanner getPlayerMoney = new Scanner(System.in);
         do {
             // player message
-            System.out.println(displaySingleLine + "\n" + displayYouHave + player.visaCard() + displayOnYourVisa + "\n" + displaySingleLine + "\n" + displayBuyCredits);
-            // player input
+            System.out.println(displaySingleLine + "\n" + displayYouHave + player.visaCard()
+                    + displayOnYourVisa + "\n" + displaySingleLine + "\n" + displayBuyCredits);
+            // player input for validation
             while (!getPlayerMoney.hasNextInt()) {
-
-                // validate entry
                 System.out.println(displayInvalidEntry);
                 getPlayerMoney.next(); 
             }
             validNumber = getPlayerMoney.nextInt();
-            } while (validNumber <= 0);
+            } while (validNumber <= 0) ;
+            // validated input
+            System.out.println("\n" + displaySingleLine +"\n" +displayValidEntry + validNumber);
+            playerCash = validNumber;
+            runGame = true;
 
-        // validated
-        System.out.println("\n" + displaySingleLine +"\n" +displayValidEntry + validNumber);
-        playerCash = validNumber;
-        runGame = true;
 
         // exit if player input exceeds credit card limit
         if (playerCash > 100){
@@ -75,6 +75,8 @@ public class Runner {
             runGame = false;
         }
 
+
+        
         // set values
         fruitMachine.playerCredits = playerCash;
 

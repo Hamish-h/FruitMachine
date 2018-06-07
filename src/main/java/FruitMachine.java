@@ -28,7 +28,6 @@ public class FruitMachine {
     Integer winFourMatchingReels = 100;
     Integer winFiveMatchingReels = 500;
 
-
     public FruitMachine(){
 
         // machine output messages for 'getReels'
@@ -43,11 +42,6 @@ public class FruitMachine {
         this.displayWinnerMessage = "Congratulations, YOU HAVE WON";
         this.displayLosingMessage = "Unlucky this time, try again?";
         this.displayRemainingCredit = "Your remaining credit is £";
-
-//
-//        this.threeMatchingReels = 30;
-//        this.fourMatchingReels = 100;
-//        this.fiveMatchingReels = 500;
     }
 
     // random
@@ -81,6 +75,10 @@ public class FruitMachine {
     public Selection getReelFiveChoice() { return reelFiveChoice; }
     public int getNumberOfPlayerCredits(){ return playerCredits; }
     public int getNumberOfCashWinnings(){ return cashWinnings; }
+    public int getWinThreeMatchingReels() { return winThreeMatchingReels; }
+    public int getWinFourMatchingReels() { return winFourMatchingReels; }
+    public int getWinFiveMatchingReels() { return winFiveMatchingReels; }
+
 
     // reel choice
     public String getReels() {
@@ -214,4 +212,5 @@ public class FruitMachine {
         }
         return null;
     }
+
 }

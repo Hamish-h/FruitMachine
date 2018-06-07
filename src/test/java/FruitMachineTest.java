@@ -11,19 +11,31 @@ public class FruitMachineTest {
     @Before
     public void before(){
         fruitMachine = new FruitMachine();
-
     }
 
     @Test
     public void canGetPlayerCredits(){
         assertEquals(0, fruitMachine.getNumberOfPlayerCredits());
-
     }
 
     @Test
     public void canGetCashWinnings(){
         assertEquals(0, fruitMachine.getNumberOfCashWinnings());
+    }
 
+    @Test
+    public void canGetWinThreeMatchingReels(){
+        assertEquals(30, fruitMachine.getWinThreeMatchingReels());
+    }
+
+    @Test
+    public void canGetWinFourMatchingReels(){
+        assertEquals(100, fruitMachine.getWinFourMatchingReels());
+    }
+
+    @Test
+    public void canGetWinFiveMatchingReels(){
+        assertEquals(500, fruitMachine.getWinFiveMatchingReels());
     }
 
     @Test
@@ -31,7 +43,6 @@ public class FruitMachineTest {
         fruitMachine.generateAllChoices();
         Selection choiceOne = fruitMachine.getReelOneChoice();
         assertNotNull(choiceOne);
-
     }
 
     @Test
@@ -39,7 +50,6 @@ public class FruitMachineTest {
         fruitMachine.generateAllChoices();
         Selection choiceOne = fruitMachine.getReelTwoChoice();
         assertNotNull(choiceOne);
-
     }
 
     @Test
@@ -47,7 +57,6 @@ public class FruitMachineTest {
         fruitMachine.generateAllChoices();
         Selection choiceOne = fruitMachine.getReelThreeChoice();
         assertNotNull(choiceOne);
-
     }
 
     @Test
@@ -62,7 +71,6 @@ public class FruitMachineTest {
         fruitMachine.generateAllChoices();
         Selection choiceOne = fruitMachine.getReelFiveChoice();
         assertNotNull(choiceOne);
-
     }
 
     @Test
@@ -80,12 +88,7 @@ public class FruitMachineTest {
         assertEquals(choiceThree instanceof Selection, true);
         assertEquals(choiceFour instanceof Selection, true);
         assertEquals(choiceFive instanceof Selection, true);
-
     }
-
-    // seed randomiser (test only) later ???
-    // read mocking
-
 }
 
 

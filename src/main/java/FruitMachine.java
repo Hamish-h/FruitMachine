@@ -8,18 +8,18 @@ public class FruitMachine {
     // Extension
     private Selection reelFourChoice;
     private Selection reelFiveChoice;
-
-    private String displayLineFruitmachine;
+    
+    private String displayLineFruitMachine;
     private String displayLineDoubleLine;
-    private String line02;
-    private String line03;
-    private String line04;
+    private String displayLineApples;
+    private String displayLinePears;
+    private String displayLineLimes;
     private String displayLineSingleLine;
-    private String bar;
-    private String winnerMessage;
-    private String winnerTotal;
-    private String losingMessage;
-    private String remainingCredit;
+    private String displayPipe;
+    private String displayWinnerMessage;
+    private String displayWinnerTotal;
+    private String displayLosingMessage;
+    private String displayRemainingCredit;
 
     Integer cashWinnings = 0;
     Integer playerCredits = 0;
@@ -28,16 +28,16 @@ public class FruitMachine {
 
         // machine output messages for 'getReels'
         this.displayLineDoubleLine = "==============================";
-        this.line02 = "| APPLE 3x£30 4x£90 5x£500 ! |";
-        this.line03 = "| PEARS 3x£30 4x£90 5x£500 ! |";
-        this.line04 = "| LIMES 3x£30 4x£90 5x£500 ! |";
         this.displayLineSingleLine = "------------------------------";
-        this.displayLineFruitmachine = "|   CODECLAN FRUIT MACHINE   |";
-        this.bar = "|";
-        this.winnerTotal = "      WINNINGS   £";
-        this.winnerMessage = "Congratulations, YOU HAVE WON";
-        this.losingMessage = "Unlucky this time, try again?";
-        this.remainingCredit = "Your remaining credit is £";
+        this.displayLineFruitMachine = "|   CODECLAN FRUIT MACHINE   |";
+        this.displayLineApples = "| APPLE 3x£30 4x£90 5x£500 ! |";
+        this.displayLinePears = "| PEARS 3x£30 4x£90 5x£500 ! |";
+        this.displayLineLimes = "| LIMES 3x£30 4x£90 5x£500 ! |";
+        this.displayPipe = "|";
+        this.displayWinnerTotal = "     WINNINGS TOTAL   £";
+        this.displayWinnerMessage = "Congratulations, YOU HAVE WON";
+        this.displayLosingMessage = "Unlucky this time, try again?";
+        this.displayRemainingCredit = "Your remaining credit is £";
 
         // values
         this.playerCredits = 0;
@@ -60,6 +60,7 @@ public class FruitMachine {
         this.setReelFourChoice();
         this.setReelFiveChoice();
     }
+
     public void setReelOneChoice() { this.reelOneChoice = randomiseReelChoice(); }
     public void setReelTwoChoice() { this.reelTwoChoice = randomiseReelChoice(); }
     public void setReelThreeChoice() { this.reelThreeChoice = randomiseReelChoice(); }
@@ -87,104 +88,104 @@ public class FruitMachine {
         playerCredits -= 1;
 
         // display output
-        System.out.println(displayLineDoubleLine + "\n" + displayLineFruitmachine + "\n" + line02 + "\n" + line03 + "\n" + line04 + "\n" + displayLineDoubleLine);
+        System.out.println(displayLineDoubleLine + "\n" + displayLineFruitMachine + "\n" + displayLineApples + "\n" + displayLinePears + "\n" + displayLineLimes + "\n" + displayLineDoubleLine);
 
         // WINNING LINES
 
         // winning line of five apples £500
         if ((reelOne == Selection.APPLE) && (reelTwo == Selection.APPLE) && (reelThree == Selection.APPLE) && (reelFour == Selection.APPLE)&& (reelFive == Selection.APPLE)){ cashWinnings = (cashWinnings + 500);
-            System.out.println(bar + reelOne + bar + reelTwo + bar + reelThree + bar + reelFour + bar + reelFive + bar + "\n" + displayLineDoubleLine + "\n" + winnerMessage + "\n" + displayLineSingleLine + "\n" + winnerTotal + cashWinnings + "\n" + displayLineSingleLine + "\n" + remainingCredit + playerCredits);
+            System.out.println(displayPipe + reelOne + displayPipe + reelTwo + displayPipe + reelThree + displayPipe + reelFour + displayPipe + reelFive + displayPipe + "\n" + displayLineDoubleLine + "\n" + displayWinnerMessage + "\n" + displayLineSingleLine + "\n" + displayWinnerTotal + cashWinnings + "\n" + displayLineSingleLine + "\n" + displayRemainingCredit + playerCredits);
         }
 
         // winning lines of four apples £100
         else if ((reelOne == Selection.APPLE) && (reelTwo == Selection.APPLE) && (reelThree == Selection.APPLE) && (reelFour == Selection.APPLE)) { cashWinnings = (cashWinnings + 100);
-            System.out.println(bar + reelOne + bar + reelTwo + bar + reelThree + bar + reelFour + bar + reelFive + bar + "\n" + displayLineDoubleLine + "\n" + winnerMessage + "\n" + displayLineSingleLine + "\n" + winnerTotal + cashWinnings + "\n" + displayLineSingleLine + "\n" + remainingCredit + playerCredits);
+            System.out.println(displayPipe + reelOne + displayPipe + reelTwo + displayPipe + reelThree + displayPipe + reelFour + displayPipe + reelFive + displayPipe + "\n" + displayLineDoubleLine + "\n" + displayWinnerMessage + "\n" + displayLineSingleLine + "\n" + displayWinnerTotal + cashWinnings + "\n" + displayLineSingleLine + "\n" + displayRemainingCredit + playerCredits);
         }
 
         // winning lines of four apples £100
         else if ((reelTwo == Selection.APPLE) && (reelThree == Selection.APPLE) && (reelFour == Selection.APPLE) && (reelFive == Selection.APPLE)) { cashWinnings = (cashWinnings + 100);
-            System.out.println(bar + reelOne + bar + reelTwo + bar + reelThree + bar + reelFour + bar + reelFive + bar + "\n" + displayLineDoubleLine + "\n" + winnerMessage + "\n" + displayLineSingleLine + "\n" + winnerTotal + cashWinnings + "\n" + displayLineSingleLine + "\n" + remainingCredit + playerCredits);
+            System.out.println(displayPipe + reelOne + displayPipe + reelTwo + displayPipe + reelThree + displayPipe + reelFour + displayPipe + reelFive + displayPipe + "\n" + displayLineDoubleLine + "\n" + displayWinnerMessage + "\n" + displayLineSingleLine + "\n" + displayWinnerTotal + cashWinnings + "\n" + displayLineSingleLine + "\n" + displayRemainingCredit + playerCredits);
         }
 
         // winning lines of three apples £30
         else if ((reelOne == Selection.APPLE) && (reelTwo == Selection.APPLE) && (reelThree == Selection.APPLE)) { cashWinnings = (cashWinnings + 30);
-            System.out.println(bar + reelOne + bar + reelTwo + bar + reelThree + bar + reelFour + bar + reelFive + bar + "\n" + displayLineDoubleLine + "\n" + winnerMessage + "\n" + displayLineSingleLine + "\n" + winnerTotal + cashWinnings + "\n" + displayLineSingleLine + "\n" + remainingCredit + playerCredits);
+            System.out.println(displayPipe + reelOne + displayPipe + reelTwo + displayPipe + reelThree + displayPipe + reelFour + displayPipe + reelFive + displayPipe + "\n" + displayLineDoubleLine + "\n" + displayWinnerMessage + "\n" + displayLineSingleLine + "\n" + displayWinnerTotal + cashWinnings + "\n" + displayLineSingleLine + "\n" + displayRemainingCredit + playerCredits);
         }
 
         // winning lines of three apples £30
         else if ((reelTwo == Selection.APPLE) && (reelThree == Selection.APPLE) && (reelFour == Selection.APPLE)){ cashWinnings = (cashWinnings + 30);
-            System.out.println(bar + reelOne + bar + reelTwo + bar + reelThree + bar + reelFour + bar + reelFive + bar + "\n" + displayLineDoubleLine + "\n" + winnerMessage + "\n" + displayLineSingleLine + "\n" + winnerTotal + cashWinnings + "\n" + displayLineSingleLine + "\n" + remainingCredit + playerCredits);
+            System.out.println(displayPipe + reelOne + displayPipe + reelTwo + displayPipe + reelThree + displayPipe + reelFour + displayPipe + reelFive + displayPipe + "\n" + displayLineDoubleLine + "\n" + displayWinnerMessage + "\n" + displayLineSingleLine + "\n" + displayWinnerTotal + cashWinnings + "\n" + displayLineSingleLine + "\n" + displayRemainingCredit + playerCredits);
         }
 
         // winning lines of three apples £30
         else if ((reelThree == Selection.APPLE) && (reelFour == Selection.APPLE) && (reelFive == Selection.APPLE)) { cashWinnings = (cashWinnings + 30);
-            System.out.println(bar + reelOne + bar + reelTwo + bar + reelThree + bar + reelFour + bar + reelFive + bar + "\n" + displayLineDoubleLine + "\n" + winnerMessage + "\n" + displayLineSingleLine + "\n" + winnerTotal + cashWinnings + "\n" + displayLineSingleLine + "\n" + remainingCredit + playerCredits);
+            System.out.println(displayPipe + reelOne + displayPipe + reelTwo + displayPipe + reelThree + displayPipe + reelFour + displayPipe + reelFive + displayPipe + "\n" + displayLineDoubleLine + "\n" + displayWinnerMessage + "\n" + displayLineSingleLine + "\n" + displayWinnerTotal + cashWinnings + "\n" + displayLineSingleLine + "\n" + displayRemainingCredit + playerCredits);
         }
 
         // winning line of five pears £500
         else if ((reelOne == Selection.PEAR) && (reelTwo == Selection.PEAR) && (reelThree == Selection.PEAR) && (reelFour == Selection.PEAR)&& (reelFive == Selection.PEAR)){ cashWinnings = (cashWinnings + 500);
-            System.out.println(bar + reelOne + bar + reelTwo + bar + reelThree + bar + reelFour + bar + reelFive + bar + "\n" + displayLineDoubleLine + "\n" + winnerMessage + "\n" + displayLineSingleLine + "\n" + winnerTotal + cashWinnings + "\n" + displayLineSingleLine + "\n" + remainingCredit + playerCredits);
+            System.out.println(displayPipe + reelOne + displayPipe + reelTwo + displayPipe + reelThree + displayPipe + reelFour + displayPipe + reelFive + displayPipe + "\n" + displayLineDoubleLine + "\n" + displayWinnerMessage + "\n" + displayLineSingleLine + "\n" + displayWinnerTotal + cashWinnings + "\n" + displayLineSingleLine + "\n" + displayRemainingCredit + playerCredits);
         }
 
         // winning lines of four pears £100
         else if ((reelOne == Selection.PEAR) && (reelTwo == Selection.PEAR) && (reelThree == Selection.PEAR) && (reelFour == Selection.PEAR)) { cashWinnings = (cashWinnings + 100);
-            System.out.println(bar + reelOne + bar + reelTwo + bar + reelThree + bar + reelFour + bar + reelFive + bar + "\n" + displayLineDoubleLine + "\n" + winnerMessage + "\n" + displayLineSingleLine + "\n" + winnerTotal + cashWinnings + "\n" + displayLineSingleLine + "\n" + remainingCredit + playerCredits);
+            System.out.println(displayPipe + reelOne + displayPipe + reelTwo + displayPipe + reelThree + displayPipe + reelFour + displayPipe + reelFive + displayPipe + "\n" + displayLineDoubleLine + "\n" + displayWinnerMessage + "\n" + displayLineSingleLine + "\n" + displayWinnerTotal + cashWinnings + "\n" + displayLineSingleLine + "\n" + displayRemainingCredit + playerCredits);
         }
 
         // winning lines of four pears £100
         else if ((reelTwo == Selection.PEAR) && (reelThree == Selection.PEAR) && (reelFour == Selection.PEAR) && (reelFive == Selection.PEAR)) { cashWinnings = (cashWinnings + 100);
-            System.out.println(bar + reelOne + bar + reelTwo + bar + reelThree + bar + reelFour + bar + reelFive + bar + "\n" + displayLineDoubleLine + "\n" + winnerMessage + "\n" + displayLineSingleLine + "\n" + winnerTotal + cashWinnings + "\n" + displayLineSingleLine + "\n" + remainingCredit + playerCredits);
+            System.out.println(displayPipe + reelOne + displayPipe + reelTwo + displayPipe + reelThree + displayPipe + reelFour + displayPipe + reelFive + displayPipe + "\n" + displayLineDoubleLine + "\n" + displayWinnerMessage + "\n" + displayLineSingleLine + "\n" + displayWinnerTotal + cashWinnings + "\n" + displayLineSingleLine + "\n" + displayRemainingCredit + playerCredits);
         }
 
         // winning lines of three pears £30
         else if ((reelOne == Selection.PEAR) && (reelTwo == Selection.PEAR) && (reelThree == Selection.PEAR)) { cashWinnings = (cashWinnings + 30);
-            System.out.println(bar + reelOne + bar + reelTwo + bar + reelThree + bar + reelFour + bar + reelFive + bar + "\n" + displayLineDoubleLine + "\n" + winnerMessage + "\n" + displayLineSingleLine + "\n" + winnerTotal + cashWinnings + "\n" + displayLineSingleLine + "\n" + remainingCredit + playerCredits);
+            System.out.println(displayPipe + reelOne + displayPipe + reelTwo + displayPipe + reelThree + displayPipe + reelFour + displayPipe + reelFive + displayPipe + "\n" + displayLineDoubleLine + "\n" + displayWinnerMessage + "\n" + displayLineSingleLine + "\n" + displayWinnerTotal + cashWinnings + "\n" + displayLineSingleLine + "\n" + displayRemainingCredit + playerCredits);
         }
 
         // winning lines of three pears £30
         else if ((reelTwo == Selection.PEAR) && (reelThree == Selection.PEAR) && (reelFour == Selection.PEAR)){ cashWinnings = (cashWinnings + 30);
-            System.out.println(bar + reelOne + bar + reelTwo + bar + reelThree + bar + reelFour + bar + reelFive + bar + "\n" + displayLineDoubleLine + "\n" + winnerMessage + "\n" + displayLineSingleLine + "\n" + winnerTotal + cashWinnings + "\n" + displayLineSingleLine + "\n" + remainingCredit + playerCredits);
+            System.out.println(displayPipe + reelOne + displayPipe + reelTwo + displayPipe + reelThree + displayPipe + reelFour + displayPipe + reelFive + displayPipe + "\n" + displayLineDoubleLine + "\n" + displayWinnerMessage + "\n" + displayLineSingleLine + "\n" + displayWinnerTotal + cashWinnings + "\n" + displayLineSingleLine + "\n" + displayRemainingCredit + playerCredits);
         }
 
         // winning lines of three pears £30
         else if ((reelThree == Selection.PEAR) && (reelFour == Selection.PEAR) && (reelFive == Selection.PEAR)) { cashWinnings = (cashWinnings + 30);
-            System.out.println(bar + reelOne + bar + reelTwo + bar + reelThree + bar + reelFour + bar + reelFive + bar + "\n" + displayLineDoubleLine + "\n" + winnerMessage + "\n" + displayLineSingleLine + "\n" + winnerTotal + cashWinnings + "\n" + displayLineSingleLine + "\n" + remainingCredit + playerCredits);
+            System.out.println(displayPipe + reelOne + displayPipe + reelTwo + displayPipe + reelThree + displayPipe + reelFour + displayPipe + reelFive + displayPipe + "\n" + displayLineDoubleLine + "\n" + displayWinnerMessage + "\n" + displayLineSingleLine + "\n" + displayWinnerTotal + cashWinnings + "\n" + displayLineSingleLine + "\n" + displayRemainingCredit + playerCredits);
         }
 
         // winning line of five limes £500
         else if ((reelOne == Selection.LIME) && (reelTwo == Selection.LIME) && (reelThree == Selection.LIME) && (reelFour == Selection.LIME)&& (reelFive == Selection.LIME)){ cashWinnings = (cashWinnings + 500);
-            System.out.println(bar + reelOne + bar + reelTwo + bar + reelThree + bar + reelFour + bar + reelFive + bar + "\n" + displayLineDoubleLine + "\n" + winnerMessage + "\n" + displayLineSingleLine + "\n" + winnerTotal + cashWinnings + "\n" + displayLineSingleLine + "\n" + remainingCredit + playerCredits);
+            System.out.println(displayPipe + reelOne + displayPipe + reelTwo + displayPipe + reelThree + displayPipe + reelFour + displayPipe + reelFive + displayPipe + "\n" + displayLineDoubleLine + "\n" + displayWinnerMessage + "\n" + displayLineSingleLine + "\n" + displayWinnerTotal + cashWinnings + "\n" + displayLineSingleLine + "\n" + displayRemainingCredit + playerCredits);
         }
 
         // winning lines of four limes £100
         else if ((reelOne == Selection.LIME) && (reelTwo == Selection.LIME) && (reelThree == Selection.LIME) && (reelFour == Selection.LIME)) { cashWinnings = (cashWinnings + 100);
-            System.out.println(bar + reelOne + bar + reelTwo + bar + reelThree + bar + reelFour + bar + reelFive + bar + "\n" + displayLineDoubleLine + "\n" + winnerMessage + "\n" + displayLineSingleLine + "\n" + winnerTotal + cashWinnings + "\n" + displayLineSingleLine + "\n" + remainingCredit + playerCredits);
+            System.out.println(displayPipe + reelOne + displayPipe + reelTwo + displayPipe + reelThree + displayPipe + reelFour + displayPipe + reelFive + displayPipe + "\n" + displayLineDoubleLine + "\n" + displayWinnerMessage + "\n" + displayLineSingleLine + "\n" + displayWinnerTotal + cashWinnings + "\n" + displayLineSingleLine + "\n" + displayRemainingCredit + playerCredits);
         }
 
         // winning lines of four limes £100
         else if ((reelTwo == Selection.LIME) && (reelThree == Selection.LIME) && (reelFour == Selection.LIME) && (reelFive == Selection.LIME)) { cashWinnings = (cashWinnings + 100);
-            System.out.println(bar + reelOne + bar + reelTwo + bar + reelThree + bar + reelFour + bar + reelFive + bar + "\n" + displayLineDoubleLine + "\n" + winnerMessage + "\n" + displayLineSingleLine + "\n" + winnerTotal + cashWinnings + "\n" + displayLineSingleLine + "\n" + remainingCredit + playerCredits);
+            System.out.println(displayPipe + reelOne + displayPipe + reelTwo + displayPipe + reelThree + displayPipe + reelFour + displayPipe + reelFive + displayPipe + "\n" + displayLineDoubleLine + "\n" + displayWinnerMessage + "\n" + displayLineSingleLine + "\n" + displayWinnerTotal + cashWinnings + "\n" + displayLineSingleLine + "\n" + displayRemainingCredit + playerCredits);
         }
 
         // winning lines of three limes £30
         else if ((reelOne == Selection.LIME) && (reelTwo == Selection.LIME) && (reelThree == Selection.LIME)) { cashWinnings = (cashWinnings + 30);
-            System.out.println(bar + reelOne + bar + reelTwo + bar + reelThree + bar + reelFour + bar + reelFive + bar + "\n" + displayLineDoubleLine + "\n" + winnerMessage + "\n" + displayLineSingleLine + "\n" + winnerTotal + cashWinnings + "\n" + displayLineSingleLine + "\n" + remainingCredit + playerCredits);
+            System.out.println(displayPipe + reelOne + displayPipe + reelTwo + displayPipe + reelThree + displayPipe + reelFour + displayPipe + reelFive + displayPipe + "\n" + displayLineDoubleLine + "\n" + displayWinnerMessage + "\n" + displayLineSingleLine + "\n" + displayWinnerTotal + cashWinnings + "\n" + displayLineSingleLine + "\n" + displayRemainingCredit + playerCredits);
         }
 
         // winning lines of three limes £30
         else if ((reelTwo == Selection.LIME) && (reelThree == Selection.LIME) && (reelFour == Selection.LIME)){ cashWinnings = (cashWinnings + 30);
-            System.out.println(bar + reelOne + bar + reelTwo + bar + reelThree + bar + reelFour + bar + reelFive + bar + "\n" + displayLineDoubleLine + "\n" + winnerMessage + "\n" + displayLineSingleLine + "\n" + winnerTotal + cashWinnings + "\n" + displayLineSingleLine + "\n" + remainingCredit + playerCredits);
+            System.out.println(displayPipe + reelOne + displayPipe + reelTwo + displayPipe + reelThree + displayPipe + reelFour + displayPipe + reelFive + displayPipe + "\n" + displayLineDoubleLine + "\n" + displayWinnerMessage + "\n" + displayLineSingleLine + "\n" + displayWinnerTotal + cashWinnings + "\n" + displayLineSingleLine + "\n" + displayRemainingCredit + playerCredits);
         }
 
         // winning lines of three limes £30
         else if ((reelThree == Selection.LIME) && (reelFour == Selection.LIME) && (reelFive == Selection.LIME)) { cashWinnings = (cashWinnings + 30);
-            System.out.println(bar + reelOne + bar + reelTwo + bar + reelThree + bar + reelFour + bar + reelFive + bar + "\n" + displayLineDoubleLine + "\n" + winnerMessage + "\n" + displayLineSingleLine + "\n" + winnerTotal + cashWinnings + "\n" + displayLineSingleLine + "\n" + remainingCredit + playerCredits);
+            System.out.println(displayPipe + reelOne + displayPipe + reelTwo + displayPipe + reelThree + displayPipe + reelFour + displayPipe + reelFive + displayPipe + "\n" + displayLineDoubleLine + "\n" + displayWinnerMessage + "\n" + displayLineSingleLine + "\n" + displayWinnerTotal + cashWinnings + "\n" + displayLineSingleLine + "\n" + displayRemainingCredit + playerCredits);
         }
 
         // losing lines
         else {
             cashWinnings = (cashWinnings);
-            System.out.println(bar + reelOne + bar + reelTwo + bar + reelThree + bar + reelFour + bar + reelFive + bar + "\n" + displayLineDoubleLine + "\n" + losingMessage + "\n" + displayLineSingleLine + "\n" + winnerTotal + cashWinnings + "\n" + displayLineSingleLine + "\n" + remainingCredit + playerCredits);
+            System.out.println(displayPipe + reelOne + displayPipe + reelTwo + displayPipe + reelThree + displayPipe + reelFour + displayPipe + reelFive + displayPipe + "\n" + displayLineDoubleLine + "\n" + displayLosingMessage + "\n" + displayLineSingleLine + "\n" + displayWinnerTotal + cashWinnings + "\n" + displayLineSingleLine + "\n" + displayRemainingCredit + playerCredits);
         }
         return null;
     }

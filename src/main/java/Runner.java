@@ -29,14 +29,15 @@ public class Runner {
 
         // runner values
         Integer PlayerVisaCard;
-        Integer playerCash = 0;
-        Integer playerTally = 0;
-        Integer playerInput = 0;
-        Integer playerPayout = 0;
-        Integer validNumber = 0;
+        Integer playerCash;
+        Integer playerTally;
+        Integer playerInput;
+        Integer playerPayout;
+        Integer validNumber;
         Integer lines;
-        boolean runGame = true;
+        boolean runGame;
         java.util.Date date = new java.util.Date();
+
 
         // player instructions
         System.out.println(displayDoubleLine + "\n" + displayFruitMachine + "\n" + displayLineApples + "\n" + displayPears + "\n" + displayLimes + "\n" + displaySingleLine + "\n" + displayCreditPerPlay);
@@ -46,15 +47,18 @@ public class Runner {
         do {
             // player message
             System.out.println(displaySingleLine + "\n" + displayYouHave + player.visaCard() + displayOnYourVisa + "\n" + displaySingleLine + "\n" + displayBuyCredits);
-            // keyboard input
+            // player input
             while (!getPlayerMoney.hasNextInt()) {
-                // invalid input
+
+
+                // validate entry
                 System.out.println(displayInvalidEntry);
                 getPlayerMoney.next(); 
             }
             validNumber = getPlayerMoney.nextInt();
         } while (validNumber <= 0);
-        // valid input
+
+        // validated
         System.out.println("\n" + displaySingleLine +"\n" +displayValidEntry + validNumber);
         playerCash = validNumber;
         runGame = true;
@@ -106,7 +110,6 @@ public class Runner {
                 // set output payout
                 System.out.println(displaySingleLine + "\n" + displayPayout + "\n" + displayFruitMachine + "\n" + displaySingleLine + "\n" + displayCreditRefundWinnings + playerPayout + "\n" + displaySingleLine + "\n" + displayYouHave + playerTally + displayOnYourVisa + "\n" + displaySingleLine + "\n" + date + "\n" + displayDoubleLine);
 
-
                 // spacer
                 for (lines = 0; lines <= 2; lines++)
                     System.out.println();
@@ -154,4 +157,5 @@ public class Runner {
             }
         }
     }
+
 }

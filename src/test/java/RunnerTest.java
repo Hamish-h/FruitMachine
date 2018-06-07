@@ -13,5 +13,4 @@ public class RunnerTest {
         runner = new Runner();
     }
 
-
 }

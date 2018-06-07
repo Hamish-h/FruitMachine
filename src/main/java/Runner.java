@@ -25,43 +25,44 @@ public class Runner {
         String displayDataInvalidGameOver = "Data entered invalid, Game Over!";
         String displayExceedsVisaCredit = "That exceeds your VisaCard credit!";
         String displayInvalidAmount = "Invalid amount, £1 credit per play!";
-        String displayInvalidEntry = "Invalid entry, enter £££ number!";
+        String displayInvalidEntry = "Invalid entry, enter numbers!";
         String displayValidEntry = "Purchased credits = ";
 
         // runner values
         Integer PlayerVisaCard;
-        Integer playerCash = 0;
+        Integer playerCash;
         Integer playerTally;
-        Integer playerInput = 0;
+        Integer playerInput;
         Integer playerPayout;
         Integer validNumber;
         Integer lines;
-        boolean runGame;
         java.util.Date date = new java.util.Date();
-
+        boolean runGame;
 
         // player instructions
         System.out.println(displayDoubleLine + "\n" + displayFruitMachine + "\n" + displayLineApples + "\n"
                 + displayPears + "\n" + displayLimes + "\n" + displaySingleLine + "\n" + displayCreditPerPlay);
-        
+
         // get player input
         Scanner getPlayerMoney = new Scanner(System.in);
         do {
             // player message
             System.out.println(displaySingleLine + "\n" + displayYouHave + player.visaCard()
                     + displayOnYourVisa + "\n" + displaySingleLine + "\n" + displayBuyCredits);
-            // player input for validation
+
+            // validate player input
             while (!getPlayerMoney.hasNextInt()) {
                 System.out.println(displayInvalidEntry);
                 getPlayerMoney.next(); 
             }
+
             validNumber = getPlayerMoney.nextInt();
             } while (validNumber <= 0) ;
-            // validated input
+
+            // validated
             System.out.println("\n" + displaySingleLine +"\n" +displayValidEntry + validNumber);
             playerCash = validNumber;
             runGame = true;
-
 
         // exit if player input exceeds credit card limit
         if (playerCash > 100){
@@ -75,8 +76,6 @@ public class Runner {
             runGame = false;
         }
 
-
-        
         // set values
         fruitMachine.playerCredits = playerCash;
 
@@ -86,14 +85,27 @@ public class Runner {
             // adjust visa contents
             PlayerVisaCard = (player.visaCard() - playerCash);
 
-            // Set player instructions
-            System.out.println(displaySingleLine + "\n" + displayYouHave + PlayerVisaCard + displayOnYourVisa + "\n" + displaySingleLine + "\n" + displayPlayerOptions + "\n" + displaySingleLine);
-
-            // Get player input
+            // get player input
             Scanner getPlayerInput = new Scanner(System.in);
-            playerInput = getPlayerInput.nextInt();
+            do {
+                // player message
+                System.out.println(displaySingleLine + "\n" + displayYouHave + PlayerVisaCard + displayOnYourVisa + "\n" + displaySingleLine + "\n" + displayPlayerOptions + "\n" + displaySingleLine);
 
-            // exit if player enters any other characters
+                // validate player input
+                while (!getPlayerInput.hasNextInt()) {
+                    System.out.println(displayInvalidEntry);
+                    getPlayerInput.next();
+                }
+
+                validNumber = getPlayerInput.nextInt();
+            } while (validNumber <= 0) ;
+
+            // validated
+            System.out.println("\n" + displaySingleLine +"\n" +displayValidEntry + validNumber);
+            playerInput = validNumber;
+            runGame = true;
+
+            // exit if player enters any other numbers
             if (playerInput != 1 && playerInput != 2) {
                 System.out.println(displayDataInvalidGameOver);
                 runGame = false;
@@ -159,5 +171,4 @@ public class Runner {
             }
         }
     }
-
 }
